@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_theme_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin">
+
+        <com.elluminati.eber.driver.components.CustomCircularProgressView
+            android:id="@+id/ivProgressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:padding="0dp"
+            app:cpv_color="@color/color_app_theme_dark"
+            app:cpv_indeterminate="true"
+            app:cpv_thickness="4dp" />
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:id="@+id/tvTitleProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:text="@string/msg_loading"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_app_theme_dark"
+            android:textSize="@dimen/size_general_small" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/viewDive"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/color_app_divider_horizontal" />
+
+    <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+        android:id="@+id/tvEarningHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_padding"
+        android:paddingStart="@dimen/activity_horizontal_padding"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_padding"
+        android:paddingBottom="@dimen/activity_horizontal_padding"
+        android:text="Earning"
+        android:textAllCaps="false"
+        android:textSize="@dimen/size_general" />
+
+</LinearLayout>

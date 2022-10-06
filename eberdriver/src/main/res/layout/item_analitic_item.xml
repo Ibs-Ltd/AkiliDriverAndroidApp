@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/tvAnalyticValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+        android:text="Earning"
+        android:textSize="@dimen/size_general_small" />
+
+    <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+        android:id="@+id/tvAnalyticName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="Earning"
+        android:textAllCaps="false"
+        android:textColor="@color/color_app_label"
+        android:textSize="@dimen/size_general_small" />
+
+    <View
+        android:id="@+id/viewDive"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A4A4A4" />
+
+</LinearLayout>

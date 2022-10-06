@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_theme_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_app_custom" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/tag" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        card_view:cardBackgroundColor="@color/color_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <com.elluminati.eber.driver.components.MyFontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/text_your_referral_code"
+                    android:textColor="@color/color_app_text"
+                    android:textSize="@dimen/size_general_small" />
+
+                <com.elluminati.eber.driver.components.MyFontTextView
+                    android:id="@+id/tvUserReferralCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/activity_margin_register"
+                    android:text="--"
+                    android:textColor="@color/color_app_text"
+                    android:textSize="@dimen/size_menu_name" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <com.elluminati.eber.driver.components.MyFontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/text_your_referral_credit"
+                    android:textColor="@color/color_app_text"
+                    android:textSize="@dimen/size_general_small" />
+
+                <com.elluminati.eber.driver.components.MyFontTextView
+                    android:id="@+id/tvUserReferralCradit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/activity_margin_register"
+                    android:text="--"
+                    android:textColor="@color/color_app_text"
+                    android:textSize="@dimen/size_menu_name" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/text_share_referral"
+            android:textColor="@color/color_app_text"
+            android:textSize="@dimen/size_general" />
+
+    </LinearLayout>
+
+    <com.elluminati.eber.driver.components.MyFontButton
+        android:id="@+id/btnShareReferralCode"
+        android:layout_width="@dimen/app_button_size"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@drawable/selector_rect_shape_blue"
+        android:gravity="center"
+        android:text="@string/text_share_referral_code"
+        android:textAllCaps="false"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/size_general_small" />
+</LinearLayout>

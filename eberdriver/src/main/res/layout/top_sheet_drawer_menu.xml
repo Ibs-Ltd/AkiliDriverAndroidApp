@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toolbar_bg_rounded_bottom"
+    android:elevation="16dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/top_sheet_behavior">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ivClosedDrawerMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/color_white"
+            android:padding="@dimen/activity_horizontal_margin"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+        <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/text_menu"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/size_general"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listViewDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_white"
+        android:drawSelectorOnTop="true"
+        android:scrollbars="vertical" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_app_divider_horizontal">
+
+    </View>
+
+    <com.elluminati.eber.driver.components.MyFontButton
+        android:id="@+id/btnLogOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:text="@string/text_logout"
+        android:textAllCaps="false"
+        android:textColor="@color/color_black" />
+</LinearLayout>

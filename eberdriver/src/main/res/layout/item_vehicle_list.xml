@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dimen_bill_second_top"
+    android:paddingTop="@dimen/dimen_bill_second_top"
+    android:paddingEnd="@dimen/dimen_bill_second_top"
+    android:paddingBottom="@dimen/dimen_bill_line">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/llEditVehicles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivCarVehicleList"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:src="@drawable/car_placeholder" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen_bill_second_top"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.elluminati.eber.driver.components.MyFontTextView
+                    android:id="@+id/tvVehicleListName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BMW X1"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/size_general" />
+
+
+                <com.elluminati.eber.driver.components.MyFontTextView
+                    android:id="@+id/tvVehicleListPlateNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="GJ 03 DC 4654"
+                    android:textColor="@color/color_app_text"
+                    android:textSize="@dimen/size_general_small" />
+
+                <com.elluminati.eber.driver.components.MyFontTextView
+                    android:id="@+id/tvExpireMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/text_document_not_uploded"
+                    android:textColor="@color/color_app_red"
+                    android:textSize="@dimen/size_general_small"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RadioButton
+            android:id="@+id/rbSelectVehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dimen_bill_margin_two" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

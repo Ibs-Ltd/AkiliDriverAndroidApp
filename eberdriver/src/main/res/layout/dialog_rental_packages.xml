@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvProductFilter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:background="@color/color_white"
+    android:visibility="visible"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/dialog_elevation">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_app_theme_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <com.elluminati.eber.driver.components.MyTitleFontTextView
+            android:id="@+id/tvDialogLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:paddingStart="@dimen/activity_margin_register"
+            android:paddingEnd="@dimen/activity_margin_register"
+            android:text="@string/text_package"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/size_general" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+                    android:id="@+id/tvPackageName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:text="Sliver"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/size_general" />
+
+                <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+                    android:id="@+id/tvPackagePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 100"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/size_general" />
+            </LinearLayout>
+
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/tvPackageUnitPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1hr and 10km"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general_small" />
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/tvPackageInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_padding"
+                android:maxLines="3"
+                android:minLines="1"
+                android:text="@string/msg_for_extra_charge"
+                android:textColor="@color/color_app_label"
+                android:textSize="@dimen/size_general_small" />
+        </LinearLayout>
+
+        <com.elluminati.eber.driver.components.MyFontButton
+            android:id="@+id/btnOk"
+            android:layout_width="@dimen/dialog_button_size"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_round_rect_shape_blue"
+            android:text="@string/text_ok"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_general_small" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

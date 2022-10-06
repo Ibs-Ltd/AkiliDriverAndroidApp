@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="drawer_menu_icons">
+        <item>@drawable/menu_profile</item>
+        <item>@drawable/menu_history</item>
+        <item>@drawable/menu_document</item>
+        <item>@drawable/menu_referral</item>
+        <item>@drawable/menu_settings</item>
+        <item>@drawable/menu_earning</item>
+        <item>@drawable/menu_credit_card</item>
+        <item>@drawable/menu_help</item>
+        <item>@drawable/menu_bank_manu</item>
+    </array>
+
+    <array name="drawer_menu_item">
+        <item>@string/text_profile</item>
+        <item>@string/text_history</item>
+        <item>@string/text_Document</item>
+        <item>@string/text_referral</item>
+        <item>@string/text_settings</item>
+        <item>@string/text_earning</item>
+        <item>@string/text_payments</item>
+        <item>@string/text_contact_us</item>
+        <item>@string/text_bank_detail</item>
+    </array>
+
+    <array name="language_code">
+        <item>en</item>
+        <item>ar</item>
+        <item>fr</item>
+        <item>es</item>
+    </array>
+
+    <array name="language_name">
+        <item>English</item>
+        <item>عربى</item>
+        <item>français</item>
+        <item>Español</item>
+    </array>
+
+    <array name="gender_english">
+        <item>male</item>
+        <item>female</item>
+    </array>
+
+    <array name="gender">
+        <item>@string/text_male</item>
+        <item>@string/text_female</item>
+    </array>
+</resources>

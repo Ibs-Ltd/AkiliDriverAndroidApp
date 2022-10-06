@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llCreditCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start|center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/activity_horizontal_padding"
+    android:paddingBottom="@dimen/activity_horizontal_padding">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_padding"
+        android:visibility="visible"
+        app:srcCompat="@drawable/card" />
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/tvCardNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="*****4242"
+        android:textAllCaps="false"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/size_general_small" />
+
+    <ImageView
+        android:id="@+id/ivSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_padding"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_done_black_24dp" />
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_close_black_24dp" />
+</LinearLayout>
+

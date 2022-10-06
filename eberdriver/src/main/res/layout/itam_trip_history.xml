@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llHistory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|start"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivClientPhotoDialog"
+            android:layout_width="@dimen/driver_history_photo_size"
+            android:layout_height="@dimen/driver_history_photo_size"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ellipse" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/tvHistoryClientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Devide Aelex"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/size_general" />
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/tvHistoryTripTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:31 PM"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general_small" />
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/tvCanceledBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="@color/color_app_red"
+                android:textSize="@dimen/size_label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+                android:id="@+id/tvHistoryTripCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:text="12"
+                android:textColor="@color/color_app_button"
+                android:textSize="@dimen/size_general" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.elluminati.eber.driver.components.MyFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_your_earning"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/size_label" />
+
+                <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+                    android:id="@+id/tvProviderEarning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_bill_line"
+                    android:text="25"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/size_general" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_app_divider_horizontal" />
+</LinearLayout>
+
+

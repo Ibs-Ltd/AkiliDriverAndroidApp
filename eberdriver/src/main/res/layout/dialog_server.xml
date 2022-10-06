@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvServer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:background="@color/color_white"
+    android:visibility="visible"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/dialog_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_app_theme_bg"
+        android:orientation="vertical">
+
+        <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:text="@string/text_select_server"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/size_general" />
+
+        <RadioGroup
+            android:id="@+id/dialogRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_padding">
+
+            <RadioButton
+                android:id="@+id/rbServer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_bill_line"
+                android:layout_marginEnd="@dimen/dimen_bill_line"
+                android:text="@string/text_live"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general" />
+
+            <RadioButton
+                android:id="@+id/rbServer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_bill_line"
+                android:layout_marginEnd="@dimen/dimen_bill_line"
+                android:text="@string/text_staging"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general" />
+
+            <RadioButton
+                android:id="@+id/rbServer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_bill_line"
+                android:layout_marginEnd="@dimen/dimen_bill_line"
+                android:text="@string/text_developer"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.elluminati.eber.driver.components.MyFontButton
+                android:id="@+id/btnOk"
+                android:layout_width="@dimen/dialog_button_size"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_rect_shape_blue"
+                android:text="@string/text_ok"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_general_small" />
+
+            <com.elluminati.eber.driver.components.MyFontButton
+                android:id="@+id/btnCancel"
+                android:layout_width="@dimen/dialog_button_size"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/text_cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general_small" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

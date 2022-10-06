@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llOrderPayment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_theme_bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/tvTripNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_trip_number"
+        android:textColor="@color/color_app_text"
+        android:textSize="10sp" />
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/tvPaymentMode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_payments"
+
+        android:textColor="@color/color_app_text"
+
+        android:textSize="10sp" />
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/tvTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_total"
+        android:textColor="@color/color_app_text"
+
+        android:textSize="10sp" />
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/tvProfit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_profit"
+        android:textColor="@color/color_app_text"
+
+        android:textSize="10sp" />
+
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/tvCash"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_cash"
+
+        android:textColor="@color/color_app_text"
+        android:textSize="10sp" />
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/tvWallet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_wallet"
+
+        android:textColor="@color/color_app_text"
+        android:textSize="10sp"
+
+        android:visibility="visible" />
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/tvEarn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_earn"
+        android:textColor="@color/color_app_text"
+        android:textSize="10sp" />
+
+</LinearLayout>

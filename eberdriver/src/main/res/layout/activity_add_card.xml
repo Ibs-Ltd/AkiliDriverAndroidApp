@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:visibility="visible"
+    app:theme="@style/AppTheme">
+
+    <include layout="@layout/toolbar_app_custom" />
+
+
+    <com.elluminati.eber.driver.components.MyFontEdittextView
+        android:id="@+id/etCardHolderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:drawablePadding="@dimen/activity_horizontal_padding"
+        android:gravity="start"
+        android:hint="@string/text_card_holder_name"
+        android:inputType="textCapSentences"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:singleLine="true"
+        android:textColor="@color/color_app_text"
+        android:textColorHint="@color/color_app_label"
+        android:textSize="@dimen/size_general" />
+
+    <com.stripe.android.view.CardMultilineWidget
+        android:id="@+id/stripeCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        app:shouldShowPostalCode="false" />
+
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_theme_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_bill_line"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/tvDialogClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        app:srcCompat="@drawable/error" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edit_text_rect"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_bill_line"
+        android:paddingBottom="@dimen/dimen_bill_line">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_credit_card_number"
+            android:paddingStart="@dimen/dimen_bill_line"
+            android:paddingEnd="@dimen/dimen_bill_line">
+
+            <com.elluminati.eber.driver.components.MyFontEdittextView
+                android:id="@+id/etCreditCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:digits="0123456789"
+                android:drawablePadding="@dimen/dimen_bill_line"
+                android:gravity="center"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/color_app_text"
+                android:textColorHint="@color/color_white" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_rect"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/dimen_bill_line"
+            android:paddingBottom="@dimen/dimen_bill_line">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_mm">
+
+                <com.elluminati.eber.driver.components.MyFontEdittextView
+                    android:id="@+id/etMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:textColor="@color/color_app_text"
+                    android:textColorHint="@color/color_app_label" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_rect"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/dimen_bill_line"
+            android:paddingBottom="@dimen/dimen_bill_line">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_yy">
+
+                <com.elluminati.eber.driver.components.MyFontEdittextView
+                    android:id="@+id/etYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:textColor="@color/color_app_text"
+                    android:textColorHint="@color/color_app_label" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_rect"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/dimen_bill_line"
+            android:paddingBottom="@dimen/dimen_bill_line">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_cvc">
+
+                <com.elluminati.eber.driver.components.MyFontEdittextView
+                    android:id="@+id/etCvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:textColor="@color/color_app_text"
+                    android:textColorHint="@color/color_app_label" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.elluminati.eber.driver.components.MyFontButton
+        android:id="@+id/ivSaveCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/selector_rect_shape_blue"
+        android:text="@string/text_submit"
+        android:textAllCaps="true"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/size_general_small" />
+
+</LinearLayout>

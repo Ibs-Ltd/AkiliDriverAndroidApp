@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_margin_register">4dp</dimen>
+    <dimen name="activity_margin_register_button">2dp</dimen>
+    <dimen name="activity_margin_mainscreen">30dp</dimen>
+    <dimen name="activity_logo_margin">16dp</dimen>
+    <dimen name="dimen_profile_image_height">250dp</dimen>
+    <dimen name="dimen_bill_margin_two">5dp</dimen>
+    <dimen name="dimen_bill_margin_three">2dp</dimen>
+    <dimen name="dimen_bill_line">10dp</dimen>
+    <dimen name="dimen_bill_second_top">15dp</dimen>
+    <dimen name="dimen_feedback_image_width">105dp</dimen>
+    <dimen name="dimen_feedback_image_height">105dp</dimen>
+    <dimen name="feedback_padding">5dp</dimen>
+    <dimen name="feedback_margin_two">25dp</dimen>
+    <dimen name="button_fb_width">30dp</dimen>
+    <dimen name="button_fb_height">30dp</dimen>
+    <dimen name="button_fb_margin_bottom">4dp</dimen>
+    <dimen name="menu_img_width">100dp</dimen>
+    <dimen name="menu_img_height">100dp</dimen>
+    <dimen name="dimen_fp_margin">15dp</dimen>
+    <dimen name="dimen_fp_margin_top">20dp</dimen>
+    <dimen name="driver_photo_size">80dp</dimen>
+    <dimen name="size_label">11.68sp</dimen>
+    <dimen name="size_general_small">14.6sp</dimen>
+    <dimen name="size_general">17.52sp</dimen>
+    <dimen name="size_menu_name">20.44sp</dimen>
+    <dimen name="size_dialog_small">21.9sp</dimen>
+    <dimen name="size_name">25.21sp</dimen>
+    <dimen name="size_dialog_notification">28.08sp</dimen>
+    <dimen name="size_price">29.20sp</dimen>
+    <dimen name="size_dialog_big">42.31sp</dimen>
+    <dimen name="size_bill_total">47.84sp</dimen>
+
+    <!--Newly add  -->
+    <dimen name="dimen_margin_profile_name">150dp</dimen>
+    <dimen name="dimen_profile_margin_box">210dp</dimen>
+    <dimen name="size_big_text">7sp</dimen>
+    <dimen name="size_logo">140dp</dimen>
+    <dimen name="size_progress_main">30dp</dimen>
+    <dimen name="swipe_button_height">60dip</dimen>
+    <dimen name="text_size_end_trip">15sp</dimen>
+
+
+    <integer name="map_car_height">127</integer>
+    <integer name="map_car_width">58</integer>
+    <dimen name="dimen_map_size_small">200dp</dimen>
+    <dimen name="activity_horizontal_padding">10dp</dimen>
+    <dimen name="dimen_app_edit_text_padding">5dp</dimen>
+
+    <dimen name="vehicle_pin_width">19.33dp</dimen>
+    <dimen name="vehicle_pin_height">42.33dp</dimen>
+    <dimen name="map_padding">30dp</dimen>
+</resources>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llCarDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:clickable="false"
+    android:orientation="vertical"
+    android:visibility="visible"
+    app:behavior_peekHeight="@dimen/bottom_vehicle_sheet_pick_height"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+    <LinearLayout
+        android:id="@+id/llVehicleTag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_vehicle_sheet_pick_height"
+        android:layout_gravity="top"
+        android:background="@color/color_white"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_bill_line">
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="@dimen/dimen_bill_margin_two"
+            android:background="@drawable/selector_rect_shape_light_gray" />
+
+        <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+            android:id="@+id/tvYourVehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="@dimen/dimen_bill_margin_two"
+            android:text="@string/text_your_vehicle"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/size_menu_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llBlackView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_vehicle_sheet_pick_height"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_bill_line">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llVehicleDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_bill_second_top">
+
+                <ImageView
+                    android:id="@+id/ivCarImage"
+                    android:layout_width="75dp"
+                    android:layout_height="@dimen/dimen_provider_vehicle_image_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_bill_line"
+                    android:background="@drawable/round_rect"
+                    android:padding="3dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_bill_second_top"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <com.elluminati.eber.driver.components.MyFontTextViewMedium
+                        android:id="@+id/tvCarName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/size_general" />
+
+
+                    <com.elluminati.eber.driver.components.MyFontTextView
+                        android:id="@+id/tvCarType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="--"
+                        android:textColor="@color/color_app_button"
+                        android:textSize="@dimen/size_general" />
+
+
+                    <com.elluminati.eber.driver.components.MyFontTextView
+                        android:id="@+id/tvCarPlateNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="--"
+                        android:textColor="@color/color_app_text"
+                        android:textSize="@dimen/size_general_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.elluminati.eber.driver.components.MyFontTextView
+                        android:id="@+id/tvSpeed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/size_dialog_notification" />
+
+                    <com.elluminati.eber.driver.components.MyFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="km/h"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/size_general" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_bill_line">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.elluminati.eber.driver.components.MyFontTextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_base_price"
+                        android:textColor="@color/color_app_label"
+                        android:textSize="@dimen/size_general_small" />
+
+                    <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+                        android:id="@+id/tvCarBasePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/size_general_small" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_app_divider_horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/llTotalDistance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.elluminati.eber.driver.components.MyFontTextViewMedium
+                        android:id="@+id/tvDistanceLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/text_distance_price"
+                        android:textColor="@color/color_app_label"
+                        android:textSize="@dimen/size_general_small" />
+
+                    <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+                        android:id="@+id/tvCarDistancePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/size_general_small" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_app_divider_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.elluminati.eber.driver.components.MyFontTextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_time_price"
+                        android:textColor="@color/color_app_label"
+                        android:textSize="@dimen/size_general_small" />
+
+                    <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+                        android:id="@+id/tvCarTimePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/size_general_small" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/tvTagWallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:paddingStart="6dp"
+                android:paddingBottom="5dp"
+                android:text="@string/msg_min_wallet_required"
+                android:textColor="@color/color_app_red"
+                android:textSize="@dimen/size_label"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvSelectVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.elluminati.eber.driver.components.MyFontButton
+            android:id="@+id/btnAddVehicle"
+            android:layout_width="@dimen/app_button_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:text="@string/text_add_new_vehicle"
+            android:textAllCaps="false"
+            android:textColor="@color/color_app_button"
+            android:textSize="@dimen/size_general_small"
+            android:visibility="visible" />
+
+        <com.elluminati.eber.driver.components.MyFontButton
+            android:id="@+id/btnGoOffline"
+            android:layout_width="@dimen/app_button_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:text="@string/text_go_offline"
+            android:textAllCaps="false"
+            android:textColor="@color/color_app_red"
+            android:textSize="@dimen/size_general_small" />
+    </LinearLayout>
+
+
+</FrameLayout>

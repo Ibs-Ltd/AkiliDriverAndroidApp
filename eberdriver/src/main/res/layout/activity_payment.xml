@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_theme_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_app_custom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_bg_rounded_bottom"
+        android:elevation="@dimen/toolbar_elevation"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/wallet_icon" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/text_wallet"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/size_general_small" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/activity_horizontal_padding"
+                android:layout_marginBottom="@dimen/activity_horizontal_padding"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <com.elluminati.eber.driver.components.MyFontTextView
+                    android:id="@+id/tvWalletAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="--"
+                    android:textColor="@color/color_app_button"
+                    android:textSize="@dimen/size_dialog_small" />
+
+                <LinearLayout
+                    android:id="@+id/llSubmitWalletAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.elluminati.eber.driver.components.MyFontEdittextView
+                        android:id="@+id/etWalletAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="@string/text_enter_wallet_amount"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/color_app_button"
+                        android:textSize="@dimen/size_dialog_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/tvSubmitWalletAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:paddingBottom="12dp"
+                android:text="@string/text_add"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/color_app_button"
+                android:textSize="@dimen/size_general" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/dimen_bill_margin_two"
+        android:gravity="start"
+        android:text="@string/text_select_payment_gateway"
+        android:textColor="@color/color_app_label"
+        android:textSize="@dimen/size_general_small"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_bill_line"
+            app:srcCompat="@drawable/drop_down" />
+
+        <Spinner
+            android:id="@+id/spinnerPaymentGateWay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:dropDownVerticalOffset="50sp"
+            android:popupBackground="@android:color/white"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+    <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+        android:id="@+id/tvCreditCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/dimen_bill_margin_two"
+        android:gravity="start"
+        android:text="@string/text_credit_card"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/size_general_small" />
+
+    <com.elluminati.eber.driver.components.MyTitleFontTextView
+        android:id="@+id/tvNoItem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/msg_no_item"
+        android:textColor="@color/color_app_divider_horizontal"
+        android:textSize="@dimen/size_dialog_notification"
+        android:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/card_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+
+
+    <com.elluminati.eber.driver.components.MyFontButton
+        android:id="@+id/btnWalletHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dimen_bill_line"
+        android:background="@android:color/transparent"
+        android:paddingStart="@dimen/dimen_bill_line"
+        android:paddingEnd="@dimen/dimen_bill_line"
+        android:text="@string/text_wallet_history"
+        android:textAllCaps="false"
+        android:textColor="@color/color_app_button"
+        android:textSize="@dimen/size_general_small"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/llAddButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_bill_line">
+
+        <com.elluminati.eber.driver.components.MyFontButton
+            android:id="@+id/btnAddCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rect_shape_blue"
+            android:text="@string/text_add_new_card"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_general_small"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

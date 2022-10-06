@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_theme_bg">
+
+
+    <com.elluminati.eber.driver.components.CustomEventMapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <include layout="@layout/dialog_go_online" />
+
+
+    <ImageView
+        android:id="@+id/llCreateTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:src="@drawable/btn_initiate_trip"
+        android:visibility="gone" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ivTargetLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="85dp"
+        android:visibility="gone"
+        app:backgroundTint="@color/color_white"
+        app:fabSize="mini"
+        app:layout_anchor="@+id/llCarDetails"
+        app:layout_anchorGravity="top|end"
+        app:srcCompat="@drawable/ic_my_location_black_24dp" />
+
+    <ImageView
+        android:id="@+id/ivDriverCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/llNotApproved"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottom_vehicle_sheet_pick_height"
+        android:background="@color/color_app_trans_white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivPendingImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/activity_horizontal_padding"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_waiting" />
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:id="@+id/tvAdminMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivPendingImage"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dimen_app_edit_text_padding"
+            android:gravity="center"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/size_dialog_small"
+            android:visibility="visible" />
+
+        <com.elluminati.eber.driver.components.MyFontButton
+            android:id="@+id/btnAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_round_rect_shape_blue"
+            android:gravity="center"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_general_small"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/shadow_top"
+        app:layout_anchor="@id/llCarDetails" />
+
+    <include layout="@layout/layout_vehicle_detail" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

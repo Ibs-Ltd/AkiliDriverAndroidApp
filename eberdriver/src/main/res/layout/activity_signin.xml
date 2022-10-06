@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_theme_bg"
+    android:orientation="vertical">
+
+
+    <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_bg_rounded_bottom"
+        android:elevation="@dimen/dialog_elevation"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/text_log_in"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/size_general" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAppLogo"
+                android:layout_width="@dimen/size_logo"
+                android:layout_height="@dimen/size_logo"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_bill_margin_two"
+                android:layout_marginBottom="@dimen/dimen_bill_margin_two"
+                android:paddingTop="@dimen/activity_logo_margin"
+                android:paddingBottom="@dimen/activity_logo_margin"
+                android:src="@drawable/eber_logo_small"
+                android:visibility="visible" />
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/text_login_with"
+                android:textSize="@dimen/size_general" />
+
+
+            <LinearLayout
+                android:id="@+id/llSocialLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/btnGoogleLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp">
+
+                </com.google.android.gms.common.SignInButton>
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/btnFbLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <com.elluminati.eber.driver.components.MyFontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_bill_line"
+                    android:gravity="center"
+                    android:text="@string/text_or"
+                    android:textColor="@color/color_app_text"
+                    android:textSize="@dimen/size_general_small" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_horizontal_margin"
+                android:layout_marginEnd="@dimen/dimen_horizontal_margin"
+                android:orientation="vertical">
+
+
+                <com.elluminati.eber.driver.components.MyFontEdittextView
+                    android:id="@+id/etSignInEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/text_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/activity_vertical_margin"
+                    android:singleLine="true"
+                    android:textColor="@color/color_app_text"
+                    android:textColorHint="@color/color_app_label"
+                    android:textSize="@dimen/size_general" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/text_password"
+                    app:errorEnabled="false"
+                    app:passwordToggleEnabled="true">
+
+                    <com.elluminati.eber.driver.components.MyFontEdittextView
+                        android:id="@+id/etSignInPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:singleLine="true"
+                        android:textColor="@color/color_app_text"
+                        android:textColorHint="@color/color_app_label"
+                        android:textSize="@dimen/size_general" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.elluminati.eber.driver.components.MyFontTextView
+                    android:id="@+id/tvForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/dimen_horizontal_margin"
+                    android:paddingStart="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/dimen_bill_margin_two"
+                    android:paddingEnd="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/dimen_bill_margin_two"
+                    android:text="@string/text_forgot_password"
+                    android:textColor="@color/color_app_button"
+                    android:textSize="@dimen/size_general_small" />
+
+
+                <com.elluminati.eber.driver.components.MyFontButton
+                    android:id="@+id/btnSignIn"
+                    android:layout_width="@dimen/app_button_size"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/selector_round_rect_shape_blue"
+                    android:gravity="center"
+                    android:text="@string/text_log_in"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/size_general_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.elluminati.eber.driver.components.MyFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_account_yet"
+                        android:textSize="@dimen/size_general_small" />
+
+                    <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+                        android:id="@+id/tvGoRegister"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_margin_register"
+                        android:paddingTop="@dimen/activity_horizontal_margin"
+                        android:paddingBottom="@dimen/activity_horizontal_margin"
+                        android:text="@string/text_register"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/size_general_small" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

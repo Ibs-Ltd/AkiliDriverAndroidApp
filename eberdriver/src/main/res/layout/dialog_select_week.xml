@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvProductFilter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:background="@color/color_white"
+    android:visibility="visible"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/dialog_elevation">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_app_theme_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+            android:id="@+id/tvDialogLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:paddingStart="@dimen/activity_margin_register"
+            android:paddingEnd="@dimen/activity_margin_register"
+            android:text="@string/text_select_week"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/size_general" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_padding"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivPreviousYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimen_bill_margin_two"
+                android:src="@drawable/arrow_week" />
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/tvDialogYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen_fp_margin_top"
+                android:paddingEnd="@dimen/dimen_fp_margin_top"
+                android:text="2017"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general" />
+
+
+            <ImageView
+                android:id="@+id/ivNextYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/dimen_bill_margin_two"
+                android:rotation="180"
+                android:src="@drawable/arrow_week" />
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvDialogWeeks"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="@dimen/dimen_bill_second_top">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.elluminati.eber.driver.components.MyFontButton
+                android:id="@+id/btnWeekOk"
+                android:layout_width="@dimen/dialog_button_size"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_rect_shape_blue"
+                android:text="@string/text_ok"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_general_small">
+
+            </com.elluminati.eber.driver.components.MyFontButton>
+
+            <com.elluminati.eber.driver.components.MyFontButton
+                android:id="@+id/btnWeekCancel"
+                android:layout_width="@dimen/dialog_button_size"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/text_cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general_small" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

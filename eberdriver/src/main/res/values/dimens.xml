@@ -1,0 +1,61 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="drawer_font_size">15.0sp</dimen>
+    <dimen name="dimen_address_padding">8dp</dimen>
+    <dimen name="dimen_address_textsize">18sp</dimen>
+
+    <dimen name="menu_item_margin">32dp</dimen>
+    <dimen name="menu_img_width">100dp</dimen>
+    <dimen name="menu_img_height">100dp</dimen>
+    <dimen name="card_view_radius">2dp</dimen>
+    <dimen name="card_view_elevation">3dp</dimen>
+    <dimen name="button_view_elevation">3dp</dimen>
+    <dimen name="dimen_horizontal_margin">32dp</dimen>
+    <dimen name="activity_logo_margin">16dp</dimen>
+    <dimen name="circle_image_view_border">2dp</dimen>
+    <dimen name="driver_history_photo_size">60dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+
+    <dimen name="size_label">8.64sp</dimen>
+    <dimen name="size_general_small">10.80sp</dimen>
+    <dimen name="size_general">12.96sp</dimen>
+    <dimen name="size_menu_name">15.12sp</dimen>
+    <dimen name="size_dialog_small">16.2sp</dimen>
+    <dimen name="size_name">18.65sp</dimen>
+    <dimen name="size_dialog_notification">20.77sp</dimen>
+    <dimen name="size_price">21.6sp</dimen>
+    <dimen name="size_dialog_big">31.3sp</dimen>
+    <dimen name="size_bill_total">35.39sp</dimen>
+    <dimen name="dimen_margin_profile_name">120dp</dimen>
+    <dimen name="dimen_profile_margin_box">180dp</dimen>
+    <dimen name="size_big_text">5sp</dimen>
+    <dimen name="size_logo">100dp</dimen>
+    <dimen name="size_progress_main">23dp</dimen>
+    <dimen name="swipe_button_height">60dip</dimen>
+    <dimen name="text_size_end_trip">15sp</dimen>
+    <dimen name="padding_bottom_google_map">65dp</dimen>
+    <dimen name="padding_bottom_trip_google_map">55dp</dimen>
+    <dimen name="dimen_map_size_small">200dp</dimen>
+    <dimen name="activity_horizontal_padding">10dp</dimen>
+    <dimen name="dimen_provider_vehicle_image_size">50dp</dimen>
+    <dimen name="card_radius">10dp</dimen>
+    <dimen name="dialog_button_size">200dp</dimen>
+    <dimen name="app_button_size">260dp</dimen>
+    <dimen name="dialog_elevation">6dp</dimen>
+    <dimen name="toolbar_elevation">6dp</dimen>
+    <dimen name="map_padding_top">165dp</dimen>
+    <dimen name="map_padding_bottom">190dp</dimen>
+    <dimen name="dimen_app_icon_size">50dp</dimen>
+    <dimen name="top_sheet_modal_elevation">16dp</dimen>
+    <dimen name="top_sheet_modal_peek_height">300dp</dimen>
+    <dimen name="bottom_vehicle_sheet_pick_height">65dp</dimen>
+
+    <dimen name="pv_pin_view_item_size">48dp</dimen>
+    <dimen name="pv_pin_view_item_radius">5dp</dimen>
+    <dimen name="pv_pin_view_item_spacing">5dp</dimen>
+    <dimen name="pv_pin_view_item_line_width">2dp</dimen>
+    <dimen name="pv_pin_view_cursor_width">2dp</dimen>
+    <dimen name="extra_large_34">34sp</dimen>
+</resources>

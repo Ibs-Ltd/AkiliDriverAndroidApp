@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/tvItemCityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_bill_line"
+        android:paddingBottom="@dimen/dimen_bill_line"
+        android:text="City Name"
+        android:textColor="@color/color_app_text"
+        android:textSize="@dimen/size_general" />
+
+</LinearLayout>

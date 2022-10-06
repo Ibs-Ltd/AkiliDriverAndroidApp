@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/llReceive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/selector_round_chet_green"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:id="@+id/tvReceiveMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:text="Hiahsdgjhagdjagdhjagsdajsgdjadghjagsdasdjhgjhagsdgahgsdjhasgdjhasgd"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/size_general" />
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:id="@+id/tvReceiveTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="22-03-2019, 20:22"
+            android:textColor="@color/color_app_label"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/selector_round_chet_blue"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:id="@+id/tvSentMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:text="Hiahsdgjhagdjagdhjagsdajsgdjadghjagsdasdjhgjhagsdgahgsdjhasgdjhasgd"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/size_general" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/tvSentTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="22-03-2019, 20:22"
+                android:textColor="@color/color_app_label"
+                android:textSize="11dp" />
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/tvRead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:textColor="@color/color_app_label"
+                android:textSize="11dp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

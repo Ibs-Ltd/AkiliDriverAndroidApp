@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_theme_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_app_custom" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wallet_graphics" />
+
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/tvAmountTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_horizontal_padding"
+        android:text="@string/text_deducted_amount"
+        android:textColor="@color/color_app_label"
+        android:textSize="@dimen/size_general_small" />
+
+    <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="--"
+        android:textColor="@color/color_app_text"
+        android:textSize="@dimen/size_dialog_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_padding"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/color_app_text" />
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:id="@+id/tvWithdrawalID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="ID 1234"
+            android:textAlignment="center"
+            android:textColor="@color/color_app_label"
+            android:textSize="@dimen/size_label" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/color_app_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_horizontal_padding"
+        android:orientation="horizontal">
+
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:id="@+id/tvTransactionDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:gravity="start"
+            android:text="--"
+            android:textAlignment="viewStart"
+            android:textColor="@color/color_app_text"
+            android:textSize="@dimen/size_label" />
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:id="@+id/tvTransactionTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="--"
+            android:textAlignment="viewStart"
+            android:textColor="@color/color_app_text"
+            android:textSize="@dimen/size_label" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textAlignment="textStart"
+            android:textColor="@color/color_app_label"
+            android:textSize="@dimen/size_general_small" />
+
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="@string/text_total_wallet_amount"
+            android:textColor="@color/color_app_label"
+            android:textSize="@dimen/size_general_small" />
+
+        <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+            android:id="@+id/tvTotalWalletAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="--"
+            android:textColor="@color/color_app_text"
+            android:textSize="@dimen/size_general" />
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:id="@+id/tvTagCurrentRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_padding"
+            android:text="@string/text_current_rate"
+            android:textColor="@color/color_app_label"
+            android:textSize="@dimen/size_general_small" />
+
+        <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+            android:id="@+id/tvCurrentRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="--"
+            android:textColor="@color/color_app_text"
+            android:textSize="@dimen/size_general" />
+    </LinearLayout>
+</LinearLayout>

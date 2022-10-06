@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_theme_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_app_custom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_padding"
+            android:layout_weight="1"
+            android:background="@drawable/selector_round_rect_shape_gray"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dimen_bill_margin_two"
+            android:paddingBottom="@dimen/dimen_bill_margin_two">
+
+
+            <LinearLayout
+                android:id="@+id/rlFromDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivFromDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_bill_line"
+                    app:srcCompat="@drawable/calendar_icon" />
+
+                <com.elluminati.eber.driver.components.MyFontTextViewMedium
+                    android:id="@+id/tvFromDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_bill_margin_two"
+                    android:padding="@dimen/dimen_bill_line"
+                    android:text="@string/text_from"
+                    android:textColor="@color/color_app_text"
+                    android:textSize="@dimen/size_general_small" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_bill_margin_two"
+                android:layout_marginBottom="@dimen/dimen_bill_margin_two"
+                android:background="@color/color_black" />
+
+            <LinearLayout
+                android:id="@+id/rlToDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/ivToDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_bill_line"
+                    app:srcCompat="@drawable/calendar_icon" />
+
+                <com.elluminati.eber.driver.components.MyFontTextViewMedium
+                    android:id="@+id/tvToDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_bill_margin_two"
+                    android:padding="@dimen/dimen_bill_line"
+                    android:text="@string/text_to"
+                    android:textColor="@color/color_app_text"
+                    android:textSize="@dimen/size_general_small" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ivSearchHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/activity_horizontal_padding"
+            android:layout_marginEnd="@dimen/activity_horizontal_padding"
+            android:background="@drawable/selector_rect_shape_blue"
+            android:padding="11dp"
+            app:srcCompat="@drawable/search_icon_white" />
+    </LinearLayout>
+
+    <com.elluminati.eber.driver.components.MyTitleFontTextView
+        android:id="@+id/tvNoItemHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/msg_no_history_item"
+        android:textColor="@color/color_app_divider_horizontal"
+        android:textSize="@dimen/size_dialog_notification"
+        android:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+
+</LinearLayout>

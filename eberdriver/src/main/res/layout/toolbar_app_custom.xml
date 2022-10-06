@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toolbar_bg_rounded_bottom"
+    android:elevation="@dimen/toolbar_elevation"
+    android:minHeight="?attr/actionBarSize"
+    android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:theme="@style/ToolbarColoredBackArrow">
+
+
+    <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/size_general"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivToolbarIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:visibility="gone" />
+
+    <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+        android:id="@+id/tvTimeRemain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/dimen_bill_line"
+        android:paddingTop="@dimen/dimen_bill_margin_two"
+        android:paddingEnd="@dimen/dimen_bill_line"
+        android:paddingBottom="@dimen/dimen_bill_margin_two"
+        android:text="@string/text_remaining"
+        android:textAllCaps="false"
+        android:textColor="@color/color_app_red"
+        android:textSize="@dimen/size_general_small"
+        android:visibility="gone" />
+
+    <com.elluminati.eber.driver.components.MyFontButton
+        android:id="@+id/btnToolBar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/activity_margin_mainscreen"
+        android:layout_gravity="end"
+        android:background="@android:color/transparent"
+        android:paddingStart="@dimen/dimen_bill_line"
+        android:paddingTop="@dimen/dimen_bill_margin_two"
+        android:paddingEnd="@dimen/dimen_bill_line"
+        android:paddingBottom="@dimen/dimen_bill_margin_two"
+        android:text="@string/text_submit"
+        android:textAllCaps="false"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/size_general_small"
+        android:visibility="gone" />
+</androidx.appcompat.widget.Toolbar>
+
+

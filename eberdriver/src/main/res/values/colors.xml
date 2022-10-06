@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_app_red_path">#3ea7de</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="color_menu_button">#B4B4B7</color>
+    <color name="color_app_gray_light">#55888888</color>
+    <color name="color_app_white_transparent">#aaffffff</color>
+    <color name="color_app_black_transparent">#a1000000</color>
+    <color name="color_app_label">#888888</color>
+    <color name="color_app_text">#5c5c5c</color>
+    <color name="color_app_theme_bg">#ffffff</color>
+    <color name="color_app_edit_text_border">#ECECED</color>
+    <color name="color_app_divider_horizontal">#C0C0C0</color>
+    <color name="color_app_yellow">#FFED7D</color>
+    <color name="color_app_red">#e33c3c</color>
+    <color name="color_app_trans_white2">#f0ffffff</color>
+    <color name="color_app_status_bar_green">#09C9AB</color>
+    <color name="color_app_theme_dark">#3ea7de</color>
+    <color name="color_app_theme_light">#3ea7de</color>
+    <color name="color_app_button">#3ea7de</color>
+    <color name="color_app_button_tint">#3ea7de</color>
+    <color name="color_app_path">#47AAFF</color>
+    <color name="color_end_trip_progress">#3ea7de</color>
+    <color name="color_app_button_deselect">#55028d9f</color>
+    <color name="color_white_light">#c4c4c4</color>
+    <color name="color_address_background_gray">#e1e1e1</color>
+    <color name="color_fare_est_text">#a7bbc2</color>
+    <color name="color_app_wallet_bg">#deececec</color>
+    <color name="color_app_wallet_deduct">#E64143</color>
+    <color name="color_app_wallet_added">#578E12</color>
+    <color name="color_app_divider_horizontal_2">#B3B6B7</color>
+    <color name="ebon_clay_background">#212C35</color>
+    <!--Change this color when make clone app-->
+
+
+    <!--<color name="color_app_green">#0cae81</color>-->
+    <!--<color name="color_app_green_light">#5cc9ab</color>-->
+    <!--<color name="color_app_green_dark">#08966E</color>-->
+    <!--<color name="color_app_button">#196076</color>-->
+    <!--<color name="color_app_button_tint">#307084</color>-->
+    <!--<color name="color_app_green_transparent">#c240A675</color>-->
+    <color name="color_app_trans_white">#7fffffff</color>
+    <color name="color_red">#ED262A</color>
+</resources>

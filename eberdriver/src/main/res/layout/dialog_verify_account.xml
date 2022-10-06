@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvProductFilter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:background="@color/color_white"
+    android:visibility="visible"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/dialog_elevation">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_app_theme_bg"
+        android:orientation="vertical">
+
+        <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+            android:id="@+id/tvDialogMessageEnable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:text="@string/text_verify_account"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/size_general" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="false"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true">
+
+            <com.elluminati.eber.driver.components.MyFontEdittextView
+                android:id="@+id/etCurrentPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/edit_text_color"
+                android:textColorHint="@color/color_app_label" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:id="@+id/tvProfileForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dimen_bill_line"
+            android:text="@string/text_forgot_password"
+            android:textColor="@color/color_app_text"
+            android:textSize="@dimen/size_general_small"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_bill_line"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.elluminati.eber.driver.components.MyFontButton
+                android:id="@+id/btnEnablePassword"
+                android:layout_width="@dimen/dialog_button_size"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_round_rect_shape_blue"
+                android:text="@string/text_yes"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_general_small">
+
+            </com.elluminati.eber.driver.components.MyFontButton>
+
+            <com.elluminati.eber.driver.components.MyFontButton
+                android:id="@+id/btnDisablePassword"
+                android:layout_width="@dimen/dialog_button_size"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/text_no"
+                android:textAllCaps="false"
+                android:textColor="@color/edit_text_color"
+                android:textSize="@dimen/size_general_small" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

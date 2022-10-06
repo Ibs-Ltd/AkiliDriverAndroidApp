@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_bill_line"
+        android:paddingBottom="@dimen/dimen_bill_line">
+
+        <TextView
+            android:id="@+id/tvFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text=""
+            android:textColor="@color/color_black" />
+
+        <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+            android:id="@+id/tvCountryCodeDigit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_padding"
+            android:layout_weight="0.4"
+            android:text="+91"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/size_general" />
+
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:id="@+id/tvCountryName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_padding"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:maxLines="1"
+            android:text="County Name"
+            android:textColor="@color/color_app_text"
+            android:textSize="@dimen/size_general" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewDiveCountry"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginStart="@dimen/dimen_bill_line"
+        android:layout_marginEnd="@dimen/dimen_bill_line"
+        android:background="@color/color_app_divider_horizontal">
+
+    </View>
+
+</LinearLayout>

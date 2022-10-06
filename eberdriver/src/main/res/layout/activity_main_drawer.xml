@@ -1,0 +1,31 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_app_custom" />
+
+        <FrameLayout
+            android:id="@+id/contain_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDrawerBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/color_app_black_transparent"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <include layout="@layout/top_sheet_drawer_menu" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

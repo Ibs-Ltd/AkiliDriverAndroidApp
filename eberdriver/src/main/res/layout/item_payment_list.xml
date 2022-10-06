@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_bill_line"
+    android:layout_marginTop="@dimen/dimen_bill_line"
+    android:layout_marginBottom="@dimen/dimen_bill_line"
+    android:background="@null"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginStart="@dimen/dimen_bill_line"-->
+    <!--android:layout_marginEnd="@dimen/dimen_bill_margin_two"-->
+    <!--android:src="@drawable/blue_dot"/>-->
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/tvPaymentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dimen_bill_line"
+        android:paddingTop="@dimen/dimen_bill_margin_two"
+        android:paddingBottom="@dimen/dimen_bill_margin_two"
+        android:textAllCaps="false"
+        android:textColor="@color/color_app_text"
+        android:textSize="@dimen/size_general" />
+
+</LinearLayout>

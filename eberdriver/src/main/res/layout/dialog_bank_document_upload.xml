@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvProductFilter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:background="@color/color_white"
+    android:visibility="visible"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/dialog_elevation">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        app:theme="@style/AppTheme">
+
+        <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+            android:id="@+id/tvDocumentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:text="@string/app_name"
+            android:textColor="@color/color_app_text"
+            android:textSize="@dimen/size_dialog_small" />
+
+
+        <ImageView
+            android:id="@+id/ivDocumentImage"
+            android:layout_width="@dimen/menu_img_height"
+            android:layout_height="@dimen/menu_img_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_add_image" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.elluminati.eber.driver.components.MyFontButton
+                android:id="@+id/btnDialogDocumentSubmit"
+                android:layout_width="@dimen/dialog_button_size"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_rect_shape_blue"
+                android:text="@string/text_submit"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_general_small">
+
+            </com.elluminati.eber.driver.components.MyFontButton>
+
+            <com.elluminati.eber.driver.components.MyFontButton
+                android:id="@+id/btnDialogDocumentCancel"
+                android:layout_width="@dimen/dialog_button_size"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/text_cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general_small" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_fp_margin_top"
+            android:layout_marginEnd="@dimen/dimen_fp_margin_top"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/btnVerifyCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_fp_margin_top"
+                android:background="@drawable/ic_arrow_back_black_24dp"
+                android:text="@string/text_verify_detail"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/size_general" />
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/tvphonemsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_fp_margin_top"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_menu_name"
+                android:visibility="gone"
+                tools:text="@string/msg_hint_otp_send_number" />
+
+
+            <com.elluminati.eber.driver.components.PinView
+                android:id="@+id/phone_otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:inputType="number"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_menu_name"
+                android:visibility="gone"
+                app:cursorColor="@color/color_black"
+                app:itemCount="6"
+                app:lineColor="@color/color_app_text"
+                app:viewType="line" />
+
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/msgEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_fp_margin_top"
+                android:text="@string/text_email_otp"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_menu_name"
+                android:visibility="gone" />
+
+            <com.elluminati.eber.driver.components.PinView
+                android:id="@+id/email_otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:inputType="number"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_menu_name"
+                android:visibility="gone"
+                app:cursorColor="@color/color_black"
+                app:itemCount="6"
+                app:lineColor="@color/color_app_text"
+                app:viewType="line" />
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/tvResendCodeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_fp_margin_top"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general"
+                tools:text="Resend code in 00:20" />
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/tvEditMobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvResendCodeTime"
+                android:layout_marginTop="@dimen/dimen_fp_margin_top"
+                android:layout_marginBottom="@dimen/dimen_fp_margin_top"
+                android:text="@string/text_edit_my_mobile_number"
+                android:textColor="@color/color_app_button"
+                android:textSize="@dimen/size_general" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dimen_fp_margin"
+        android:layout_marginTop="@dimen/dimen_fp_margin"
+        android:layout_marginEnd="@dimen/dimen_fp_margin"
+        android:layout_marginBottom="@dimen/dimen_fp_margin"
+        app:backgroundTint="@color/color_app_button"
+        app:srcCompat="@drawable/ic_arrow_forward"
+        app:useCompatPadding="true" />
+
+
+</RelativeLayout>

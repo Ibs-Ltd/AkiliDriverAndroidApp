@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/activity_vertical_margin"
+    android:paddingTop="32dp"
+    android:paddingEnd="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_baseline_location_on_24" />
+
+    <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="@string/text_use_your_location"
+        android:textAlignment="center"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/size_dialog_small" />
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:gravity="start"
+        android:text="@string/msg_location_prominent_disclosure"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/size_general" />
+
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:drawablePadding="@dimen/activity_horizontal_padding"
+        android:gravity="start"
+        android:text="@string/text_location_user_for_feature_1"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/size_general"
+        app:drawableLeftCompat="@drawable/ic_dot_feature" />
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_horizontal_padding"
+        android:layout_marginBottom="@dimen/activity_horizontal_padding"
+        android:drawablePadding="@dimen/activity_horizontal_padding"
+        android:gravity="start"
+        android:text="@string/text_location_user_for_feature_2"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/size_general"
+        app:drawableLeftCompat="@drawable/ic_dot_feature" />
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawablePadding="@dimen/activity_horizontal_padding"
+        android:gravity="start"
+        android:text="@string/text_location_user_for_feature_3"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/size_general"
+        app:drawableLeftCompat="@drawable/ic_dot_feature" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location_feature">
+
+        </ImageView>
+    </LinearLayout>
+
+    <com.elluminati.eber.driver.components.MyFontButton
+        android:id="@+id/btnNext"
+        android:layout_width="@dimen/dialog_button_size"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@drawable/selector_rect_shape_blue"
+        android:text="@string/text_continue_or_next"
+        android:textAllCaps="false"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/size_general_small">
+
+    </com.elluminati.eber.driver.components.MyFontButton>
+
+
+</LinearLayout>

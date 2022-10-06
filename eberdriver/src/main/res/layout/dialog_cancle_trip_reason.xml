@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvProductFilter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:background="@color/color_white"
+    android:visibility="visible"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/dialog_elevation">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_app_theme_bg"
+        android:orientation="vertical">
+
+
+        <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:padding="@dimen/dimen_bill_margin_two"
+            android:text="@string/text_cancel_trip"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/size_general" />
+
+        <LinearLayout
+            android:id="@+id/llCancelCharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingStart="@dimen/dimen_bill_line"
+                android:paddingEnd="@dimen/dimen_bill_line"
+                android:text="@string/msg_cancel_tip_caution"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general" />
+
+            <com.elluminati.eber.driver.components.MyFontTextViewMedium
+                android:id="@+id/tvCancelCharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dimen_bill_line"
+                android:text="$25"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/size_dialog_notification" />
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/dialogRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_padding">
+
+            <RadioButton
+                android:id="@+id/rbReasonOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_bill_line"
+                android:layout_marginEnd="@dimen/dimen_bill_line"
+                android:text="@string/msg_cancel_tip_reason_1"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general" />
+
+
+            <RadioButton
+                android:id="@+id/rbReasonTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_bill_line"
+                android:layout_marginEnd="@dimen/dimen_bill_line"
+                android:text="@string/msg_cancel_tip_reason_2"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general" />
+
+
+            <RadioButton
+                android:id="@+id/rbReasonThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_bill_line"
+                android:layout_marginEnd="@dimen/dimen_bill_line"
+                android:text="@string/msg_cancel_tip_reason_3"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general" />
+
+            <RadioButton
+                android:id="@+id/rbReasonOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_bill_line"
+                android:layout_marginEnd="@dimen/dimen_bill_line"
+                android:text="@string/text_other"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general" />
+        </RadioGroup>
+
+        <com.elluminati.eber.driver.components.MyFontEdittextView
+            android:id="@+id/etOtherReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:hint="@string/text_enter_cancel_reason_hint"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.elluminati.eber.driver.components.MyFontButton
+                android:id="@+id/btnIamSure"
+                android:layout_width="@dimen/dialog_button_size"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_round_rect_shape_blue"
+                android:text="@string/text_i_am_sure"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_general_small" />
+
+            <com.elluminati.eber.driver.components.MyFontButton
+                android:id="@+id/btnCancel"
+                android:layout_width="@dimen/dialog_button_size"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/text_cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general_small" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

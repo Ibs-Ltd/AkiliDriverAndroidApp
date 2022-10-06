@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_app_theme_dark"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/text_referral"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/size_general" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_horizontal_margin"
+        app:srcCompat="@drawable/tag" />
+
+    <com.elluminati.eber.driver.components.MyFontEdittextView
+        android:id="@+id/etReferralCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_fp_margin"
+        android:layout_marginTop="@dimen/dimen_fp_margin_top"
+        android:layout_marginEnd="@dimen/dimen_fp_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:gravity="start"
+        android:hint="@string/text_enter_ref_code"
+        android:singleLine="true"
+        android:textSize="@dimen/size_general" />
+
+    <LinearLayout
+        android:id="@+id/llInvalidReferral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/info_red_icon" />
+
+        <com.elluminati.eber.driver.components.MyFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:text="@string/error_referral_invalid"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/size_general_small" />
+    </LinearLayout>
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:text="@string/msg_referral"
+        android:textColor="@color/color_app_label"
+        android:textSize="@dimen/size_general_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_horizontal_margin">
+
+        <com.elluminati.eber.driver.components.MyFontButton
+            android:id="@+id/btnReferralSubmit"
+            android:layout_width="@dimen/app_button_size"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_rect_shape_blue"
+            android:gravity="center"
+            android:text="@string/text_submit"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_general_small" />
+
+        <com.elluminati.eber.driver.components.MyFontButton
+            android:id="@+id/btnReferralSkip"
+            android:layout_width="@dimen/app_button_size"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/text_skip"
+            android:textAllCaps="false"
+            android:textColor="@color/color_app_button"
+            android:textSize="@dimen/size_general_small" />
+
+
+    </LinearLayout>
+</LinearLayout>

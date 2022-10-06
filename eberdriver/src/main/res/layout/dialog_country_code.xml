@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/color_white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="@dimen/dialog_elevation">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/text_hint_select_country"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/size_general" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/menu_item_margin"
+            android:layout_marginEnd="@dimen/menu_item_margin"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/menu_item_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/menu_item_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/search_icon" />
+
+            <com.elluminati.eber.driver.components.MyFontEdittextView
+                android:id="@+id/etCountrySearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:background="@null"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:ems="10"
+                android:hint="@string/text_enter_country_name"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_general" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewDiveCountry"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginStart="@dimen/menu_item_margin"
+            android:layout_marginEnd="@dimen/menu_item_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:background="@color/color_app_divider_horizontal">
+
+        </View>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvCountryCode"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/menu_item_margin"
+            android:layout_marginEnd="@dimen/menu_item_margin"
+            android:layout_weight="1"
+            android:scrollbars="vertical"
+            android:visibility="visible" />
+
+        <com.elluminati.eber.driver.components.MyFontButton
+            android:id="@+id/btnAddCity"
+            android:layout_width="@dimen/dialog_button_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_round_rect_shape_blue"
+            android:text="@string/text_add"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_general_small"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

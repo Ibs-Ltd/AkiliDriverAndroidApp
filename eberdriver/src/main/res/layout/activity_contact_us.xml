@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_theme_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_app_custom" />
+
+    <ImageView
+        android:layout_width="@dimen/size_logo"
+        android:layout_height="@dimen/size_logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_margin_mainscreen"
+        android:layout_marginBottom="@dimen/dimen_bill_margin_two"
+        android:paddingTop="@dimen/activity_logo_margin"
+        android:paddingBottom="@dimen/activity_logo_margin"
+        android:src="@drawable/contacts"
+        android:visibility="visible" />
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/tvThankYouFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/color_app_text"
+        android:textSize="@dimen/size_general"
+        tools:text="eber@gmail.com" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_margin_mainscreen"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_fp_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilAdminEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/activity_horizontal_margin">
+
+                <com.elluminati.eber.driver.components.MyFontEdittextView
+                    android:id="@+id/etAdminEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:ems="10"
+                    android:focusableInTouchMode="false"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true"
+                    android:textColor="@color/edit_text_color"
+                    android:textColorHint="@color/color_app_label"
+                    android:textSize="@dimen/size_general"
+                    app:drawableLeftCompat="@drawable/mail_icon" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_fp_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilAdminPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/activity_horizontal_margin">
+
+                <com.elluminati.eber.driver.components.MyFontEdittextView
+                    android:id="@+id/etAdminPhoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:ems="10"
+                    android:focusableInTouchMode="false"
+                    android:inputType="textCapSentences"
+                    android:singleLine="true"
+                    android:textColor="@color/edit_text_color"
+                    android:textColorHint="@color/color_app_label"
+                    android:textSize="@dimen/size_general"
+                    app:drawableLeftCompat="@drawable/emergency_call" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

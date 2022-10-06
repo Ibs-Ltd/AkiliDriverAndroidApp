@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_theme_bg"
+    android:orientation="vertical">
+
+
+    <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+        android:id="@+id/tvDialogLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_bill_line"
+        android:layout_marginBottom="@dimen/dimen_bill_line"
+        android:paddingStart="@dimen/activity_margin_register"
+        android:paddingEnd="@dimen/activity_margin_register"
+        android:text="@string/text_select_gander"
+        android:textColor="@color/color_app_text"
+        android:textSize="@dimen/size_dialog_notification" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginStart="@dimen/activity_margin_mainscreen"
+        android:layout_marginEnd="@dimen/activity_margin_mainscreen"
+        android:background="@color/color_app_divider_horizontal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_bill_margin_two"
+        android:layout_marginBottom="@dimen/activity_horizontal_padding"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_padding">
+
+        <CheckBox
+            android:id="@+id/cbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:text="@string/text_male"
+            android:textSize="@dimen/size_general" />
+
+        <CheckBox
+            android:id="@+id/cbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_female"
+            android:textSize="@dimen/size_general" />
+    </LinearLayout>
+
+    <com.elluminati.eber.driver.components.MyFontButton
+        android:id="@+id/btnYes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0.2dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_round_rect_shape_blue"
+        android:text="@string/text_submit"
+        android:textAllCaps="false"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/size_general_small">
+
+    </com.elluminati.eber.driver.components.MyFontButton>
+
+</LinearLayout>

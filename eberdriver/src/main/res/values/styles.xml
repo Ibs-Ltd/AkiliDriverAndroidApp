@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/color_black</item>
+    </style>
+
+    <!--Application theme-->
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!--<item name="android:actionBarStyle">@style/ActionBar</item>-->
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogThemeLight</item>
+    </style>
+
+    <style name="ActionBar" parent="@style/Base.Widget.AppCompat.ActionBar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/FadeDialogAnimation</item>
+    </style>
+
+    <style name="FadeDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/color_app_theme_dark</item>
+        <item name="colorControlActivated">@color/color_app_theme_dark</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/color_black</item>
+    </style>
+
+    <style name="TablayoutStyle" parent="AppTheme">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="TabTextSize" parent="@android:style/Widget.TabWidget">
+        <item name="android:textSize">@dimen/size_general</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="EditTextView" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text_rect</item>
+        <item name="android:paddingBottom">@dimen/dimen_bill_line</item>
+        <item name="android:paddingTop">@dimen/dimen_bill_line</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:datePickerStyle">@style/MyDatePicker</item>
+    </style>
+
+    <style name="MyDatePicker" parent="android:Widget.Material.Light.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
+    <style name="AppBottomSheetDialogThemeLight" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/color_white</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_dialog</item>
+        <item name="behavior_fitToContents">true</item>
+
+    </style>
+
+    <style name="BottomNavigationBar" parent="AppTheme">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+</resources>

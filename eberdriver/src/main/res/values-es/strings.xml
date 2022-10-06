@@ -1,0 +1,747 @@
+<resources>
+
+    <!-- Please set same name as app_name in
+    "xml/provide_path.xml" path variable like (<external-path name="my_images" path="Eber Driver/"/>)-->
+
+
+    <!--Text-->
+
+    <string name="text_sound_off">Sonido apagado</string>
+    <string name="text_sound_on">Sonido encendido</string>
+    <string name="text_help">Ayuda</string>
+    <string name="text_logout">Cerrar sesión</string>
+    <string name="text_history">Historial</string>
+    <string name="text_log_in">Ingresar</string>
+
+    <string name="text_contact_us">Contáctanos</string>
+
+    <string name="text_off_line">Fuera de línea</string>
+    <string name="text_register">Regístrate</string>
+    <string name="text_trip_history">Historial de viajes</string>
+    <string name="text_trip_history_detail">Detalle de historial viajes</string>
+    <string name="text_email">Correo electrónico</string>
+    <string name="text_hint_enter_email">Correo electrónico</string>
+    <string name="text_enter_country_name">Buscar país</string>
+    <string name="text_password">Contraseña</string>
+    <string name="text_fast_name_hint">Nombre</string>
+    <string name="text_last_name_hint">Apellido</string>
+    <string name="text_forgot_password">¿Olvidó contraseña?</string>
+    <string name="text_hint_enter_password">Contraseña</string>
+    <string name="text_hint_select_country">Seleccionar país</string>
+    <string name="text_hint_select_city">Seleccionar ciudad</string>
+    <string name="text_feed_back">Califica tu viaje</string>
+    <string name="text_bio_hint">Bio</string>
+    <string name="text_address_hint">Dirección</string>
+    <string name="text_zip_code_hint">Código postal</string>
+    <string name="text_pass_current_hint">Constraseña actual</string>
+    <string name="text_pass_new_hint">Nueva contraseña</string>
+    <string name="text_pass_retype_hint">Confirmar contraseña nueva</string>
+    <string name="text_number_hint">Teléfono</string>
+    <string name="text_phone_no_hint">Número de teléfono.</string>
+    <string name="text_submit">Enviar</string>
+    <string name="text_share">Compartir</string>
+    <string name="text_invoice">Recibo</string>
+    <string name="text_base_price">Precio base</string>
+    <string name="text_distance_cost">Costo por distancia</string>
+    <string name="text_time_cost">Costo por tiempo</string>
+    <string name="text_referral_bonus">Crédito de referido</string>
+    <string name="text_tax">Impuesto</string>
+    <string name="text_tax_price">Precio del impuesto</string>
+    <string name="text_tax_total">Total impuestos</string>
+    <string name="text_promo_bonus">Crédito promocional </string>
+    <string name="text_total">Total</string>
+    <string name="text_exit_caps">Salir</string>
+    <string name="text_comment_hint">Cuéntanos tu experiencia, siempre es muy valioso para nosotros. </string>
+    <string name="text_comment_caps">Comentarios</string>
+    <string name="text_cancel">Cancelar</string>
+    <string name="text_send">Enviar</string>
+    <string name="text_est_time">Tiempo est. </string>
+    <string name="text_est_distance">Distancia est. </string>
+    <string name="text_payment_in">Pagado con</string>
+    <string name="text_select_date">Seleccionar fecha</string>
+    <string name="text_destination_address">Dirección destino</string>
+    <string name="text_pick_up_address">Dirección de inicio</string>
+    <string name="text_country_codes">Seleccionar país</string>
+    <string name="text_taxi_model">Modelo de vehículo</string>
+    <string name="text_taxi_number">Placa de vehículo</string>
+    <string name="text_go_offline">Ir fuera de servicio</string>
+    <string name="text_go_online">Ir en línea</string>
+    <string name="text_profile">Mi perfil</string>
+    <string name="text_accept">Aceptar</string>
+    <string name="text_reject">Rechazar </string>
+    <string name="text_coming">Toca cuando comiences</string>
+    <string name="text_arrived"> Toca cuando llegues</string>
+    <string name="text_trip_start">Toca cuando inicies el viaje</string>
+    <string name="text_trip_end">Doble toque para finalizar el viaje</string>
+    <string name="text_from">Desde</string>
+    <string name="text_to">A</string>
+    <string name="text_yesterday">Ayer</string>
+    <string name="text_today">Hoy</string>
+    <string name="text_pick_up_loc">Lugar de recogida </string>
+    <string name="text_my_location">Mi ubicación </string>
+    <string name="text_drop_location">Lugar destino </string>
+    <string name="text_account_yet">¿No tienes cuenta aún?</string>
+    <string name="text_already_account">¿Ya tiene una cuenta?</string>
+    <string name="text_create_account">Crear una cuenta</string>
+    <string name="text_yes">Si</string>
+    <string name="text_no">No</string>
+    <string name="text_camera">Cámara</string>
+    <string name="text_gallery">Galería</string>
+    <string name="text_remaining">Restan</string>
+    <string name="text_take_a_picture_and_upload">Toma una foto o cárgala desde la galería</string>
+    <string name="text_remove">Remover</string>
+    <string name="text_Document">Documentos</string>
+    <string name="text_no_destination">La dirección de destino no ha sido cargada por el usuario</string>
+    <string name="text_admin_alert">Alerta del administrador!</string>
+    <string name="text_card">Tarjeta</string>
+    <string name="text_cash">Efectivo</string>
+    <string name="text_re_try">Reintentar</string>
+    <string name="text_i_am_sure">Estoy seguro</string>
+    <string name="text_settings">Ajustes</string>
+    <string name="text_version">App version</string>
+    <string name="text_total_time">Tiempo total</string>
+    <string name="text_total_distance">Distancia total</string>
+    <string name="text_distance_price">Precio por distancia</string>
+    <string name="text_time_price">Precio por tiempo</string>
+    <string name="text_error">Error</string>
+    <string name="text_change_password">Cambio de contraseña</string>
+    <string name="text_verify_account">Verificar cuenta</string>
+    <string name="text_unit_per_distance">Por </string>
+    <string name="text_unit_per_time">/min</string>
+    <string name="text_cancel_trip">Cancelar viaje</string>
+    <string name="text_other">Otro</string>
+    <string name="text_enter_cancel_reason_hint">Elegir motivo de cancelación</string>
+    <string name="text_city_name">Seleccionar ciudad</string>
+    <string name="text_register_type">Tipo de registro</string>
+    <string name="text_verify_detail">Verificar detalles</string>
+    <string name="text_email_otp">Código de email</string>
+    <string name="text_phone_otp">Código telefónico</string>
+    <string name="text_verify">Verificar</string>
+    <string name="text_visitor_type">Tipo de visitante</string>
+    <string name="text_caution">Precaución</string>
+    <string name="text_add_city">Agregar ciudad</string>
+
+    <string name="text_request_sound">Alerta de nueva solicitud</string>
+    <string name="text_request_sound_description">Reproducir sonido cuando recibas una nueva solicitud.</string>
+    <string name="text_pick_up_sound">Alerta de recogida</string>
+    <string name="text_pick_up_sound_description">Reproducir sonido cuando estés cerca del lugar de recogida.</string>
+    <string name="text_wait_time_cost">Costo de tiempo de espera</string>
+    <string name="text_surge_price">Aumento de tarifa</string>
+    <string name="text_discount">Descuentos</string>
+    <string name="text_payment_with_card">Pago con tarjeta</string>
+    <string name="text_payment_with_cash">Pago con efectivo</string>
+    <string name="text_defult_string">00</string>
+    <string name="text_click_twice">Doble toque cuando termines el viaje.</string>
+    <string name="text_you_canceled_a_trip">Viaje cancelado </string>
+
+
+    <!--message-->
+
+    <string name="msg_are_you_sure">¿Estás seguro que deseas cerrar sesión?</string>
+
+    <string name="msg_gps_enable">Tu GPS parece estar desactivado. Por favor chequea que esté activo.</string>
+    <string name="msg_app_overlay_permission"><b>Permiso de mostrar por encima de otras apps</b>, este permiso es requerido para permitir al app mostrar las solicitudes de nuevos viajes mientras está cerrada. Por favor actívalo. </string>
+    <string name="msg_internet_enable">Tu conexión a internet parece estar caída. Por favor verificarla y actívala si es necesario. </string>
+
+    <string name="msg_loading">Loading&#8230;</string>
+    <string name="msg_waiting_for_upload_document">Esperando que los documentos sean cargados&#8230;</string>
+    <string name="msg_waiting_for_get_documents">Esperando que los documentos se muestren&#8230;</string>
+    <string name="msg_waiting_for_registering">Esperando por el registro&#8230;</string>
+    <string name="msg_waiting_for_ratting">Esperando recibir feedback&#8230;</string>
+    <string name="msg_waiting_for_sing_in">Favor esperar hasta que ingreses&#8230;</string>
+    <string name="msg_waiting_for_history">Esperándo historial&#8230;</string>
+    <string name="msg_waiting_for_detail_history">Esperando por el detalle del historial&#8230;</string>
+    <string name="msg_waiting_for_invoice">Esperando recibo&#8230;</string>
+    <string name="msg_waiting_for_cancel_trip">Cancelando viaje, por favor espere&#8230;</string>
+    <string name="msg_waiting_for_log_out">Por favor espere mientras cerramos sesión&#8230;</string>
+    <string name="msg_waiting_for_update_profile">Actualizando perfil, por favor espere&#8230;</string>
+    <string name="msg_waiting_for_trip_end">Esperando que tu viaje se complete&#8230;</string>
+    <string name="msg_waiting_for_tip">Esperando propina&#8230; </string>
+    <string name="msg_unable_get_image_from_fb"> No fue posible traer la imagen de facebook</string>
+
+    <string name="msg_on_screen">Todos los derechos reservados</string>
+    <string name="msg_enter_name">Ingresa tu nombre.</string>
+    <string name="msg_enter_lname">Ingresa tu apellido.</string>
+    <string name="msg_enter_number">Ingresa un número de teléfono.</string>
+    <string name="msg_enter_valid_number">Por favor ingresa un número de teléfono válido.</string>
+    <string name="msg_enter_email">Ingresa un correo electrónico.</string>
+    <string name="msg_enter_password">Ingresa una contraseña.</string>
+    <string name="msg_enter_valid_email">Favor ingrese una dirección de correo válida.</string>
+    <string name="msg_enter_valid_password">Favor ingrese una contraseña mayor a 6 caracteres.</string>
+    <string name="msg_no_item">No tienes tarjetas registradas aún</string>
+    <string name="msg_empty_model">Favor ingrese el modelo del vehículo.</string>
+    <string name="msg_empty_taxi_no">Favor ingrese la placa del vehículo.</string>
+    <string name="msg_plz_select_from_date">Seleccione fecha desde.</string>
+    <string name="msg_plz_select_to_date">Seleccione fecha hasta.</string>
+    <string name="msg_plz_select_valid_date">Seleccione una fecha válida.</string>
+    <string name="msg_incorrect_confirm_password">Tu contraseña de confirmación no coincide con tu contraseña. </string>
+    <string name="msg_under_review">Recibirás un correo de confirmación \ncuando el administrador te apruebe</string>
+    <string name="msg_want_to_move">¿Quieres iniciar?</string>
+    <string name="msg_you_are_offline">Estás fuera de línea ahora. ¿Quieres ir online?</string>
+    <string name="msg_go_online_to_receive_trip">Ponte en línea para recibir\nsolicitudes de viajes</string>
+
+    <string name="msg_upload_all_document">Por favor sube todos los documentos requeridos.</string>
+    <string name="msg_reason_for_permission_location">Sin este permiso, el app no será capaz de obtener tu ubicación y funcionar correctamente. ¿Estás seguro que quieres negar este permiso?
+    </string>
+
+    <string name="msg_reason_for_camera_permission">Sin este permiso el app no podrá acceder a tu cámara y almacenamiento externo. Y no podrá funcionar correctamente. ¿Estás seguro que deseas negar este permiso? </string>
+    <string name="msg_reason_for_call_permission">Sin este permiso la app no podrá realizar llamadas y funcionar correctamente. ¿Estás seguro que deseas negar este permiso? </string>
+    <string name="msg_permission_notification">Si deseas utilizar de manera correcta este app deberás activar los permisos en Preferencias del sistema. </string>
+
+    <string name="msg_google_app_not_installed">La aplicación de google maps no está instalada.</string>
+    <string name="msg_google_mail_app_not_installed">La aplicación de google maps no está instalada.</string>
+    <string name="msg_cancel_tip_reason_1">Mi cliente y yo no pudimos conectar. </string>
+    <string name="msg_cancel_tip_reason_2">Direción incorrecta.</string>
+    <string name="msg_cancel_tip_reason_3">El tiempo de espera era muy alto.</string>
+    <string name="msg_cancel_tip_caution">Está alerta. Pueden aplicar cargos de cancelación de viaje. </string>
+    <string name="msg_plz_give_valid_reason">Favor selecciona una razón de cancelación.</string>
+
+    <string name="msg_plz_select_country">Favor selecciona un país.</string>
+    <string name="msg_plz_select_city">Favor selecciona una ciudad.</string>
+
+    <string name="msg_type_not_available_current_city">Nuestro servicio no está disponible en tu ciudad actual. Si quieres registrar tu vehículo, o ayudarnos a desarrollar el negocio en tu ciudad por favor contáctanos</string>
+    <string name="msg_type_not_available_current_country">El servicio no está disponible en tu país. </string>
+
+    <string name="msg_verify_detail"> Enviaremos un código de verificación al número registrado.</string>
+
+    <string name="msg_otp_wrong">El código de verificación es incorrecto.</string>
+    <string name="msg_visitor_type_exist">Eres un visitante en esta ciudad.\n Quieres activarte en esta ciudad, aceptando sus tarifas y condiciones? </string>
+    <string name="msg_visitor_type_not_exist">Eres un visitante en esta ciudad.\n Quieres activarte en esta ciudad, aceptando sus tarifas y condiciones?</string>
+    <string name="msg_service_not_provide">El servicio no está activo en esta ciudad. ¿Quieres salir? </string>
+
+    <string name="msg_twice_click">Toque nuevamente para salir. </string>
+    <string name="msg_not_save">¿Estás seguro que deseas salir?\nLa información no será guardada.</string>
+    <string name="msg_give_ratting">Por favor danos tu feedback acerca del cliente.</string>
+    <string name="msg_service">El cierre de esto causara un mal funcionamiento de la app.</string>
+    <string name="msg_service_ticker">Se inició la carga de la locación</string>
+
+
+    <!--error message-->
+
+    <string name="error_get_image">No se ha logrado obtener la imagen. Por favor intenta de nuevo.</string>
+    <string name="error_capture_image">No se ha logrado obtener la imagen. Por favor intenta de nuevo.</string>
+
+
+    <!--message code-->
+
+    <string name="message_code_16">Te has registrado de manera exitosa. </string>
+    <string name="message_code_17">e has registrado de manera exitosa.</string>
+    <string name="message_code_18">Te has logueado de manera exitosa.</string>
+    <string name="message_code_19">Your profile has been updated successfully.</string>
+    <string name="message_code_20">Has cerrado sesión de manera exitosa.</string>
+    <string name="message_code_21">Has recibido un viaje.</string>
+    <string name="message_code_22">Has aceptado el viaje</string>
+    <string name="message_code_23">Has rechazado el viaje.</string>
+    <string name="message_code_24">Has confirmado el status del viaje.</string>
+    <string name="message_code_25">Has confirmado el status del viaje</string>
+    <string name="message_code_26">Te has activado exitosamente.</string>
+    <string name="message_code_27">Te has desactivado exitosamente.</string>
+    <string name="message_code_28">Tu viaje se ha completado exitosamente.</string>
+    <string name="message_code_29">El historial del conductor se ha mostrado con éxito.</string>
+    <string name="message_code_30">Los detalles del historial del conductor se han mostrado con éxito.</string>
+    <string name="message_code_31">Se ha evaluado con éxito al conductor.</string>
+    <string name="message_code_32">Obtener detalles</string>
+    <string name="message_code_34">You get latlong.</string>
+    <string name="message_code_53">Actualizar el token del dispositivo</string>
+    <string name="message_code_74">Se agregaron los detalles bancarios exitosamente. </string>
+    <string name="message_code_75">Se agregaron los detalles bancarios exitosamente.</string>
+    <string name="message_code_77">El correo se ha enviado exitosamente.</string>
+
+    <!-- error code -->
+
+    <string name="error_code_401">Ya es un usuario registrado.</string>
+    <string name="error_code_412">Se requiere de una identificación única. </string>
+    <string name="error_code_413">No es un usuario registrado. Por favor, regístrese.</string>
+    <string name="error_code_414">Favor ingresa tu contraseña antigua</string>
+    <string name="error_code_415">No se ha encontrado ningún viaje.</string>
+    <string name="error_code_416">Falta Id del proveedor o del viaje. </string>
+    <string name="error_code_417">No se puede mostrar el estatus del viaje.</string>
+    <string name="error_code_418">No se encontró el histórico del conductor.</string>
+    <string name="error_code_419">No se encontró el detalle del viaje.</string>
+    <string name="error_code_420">Tu viaje aún no ha terminado.</string>
+    <string name="error_code_421">Tipo de servicio no encontrado.</string>
+    <string name="error_code_425">Cierre de sesión fallido.</string>
+    <string name="error_code_426">No se logran mostrar detalles.</string>
+    <string name="error_code_436">No se encuentran detalles de los viajes. </string>
+    <string name="error_code_443">Tu contraseña no coincide con tu contraseña anterior.</string>
+    <string name="error_code_444">Tus documentos no están actualizados. </string>
+    <string name="error_code_447">Tu contraseña es incorrecta. Por favor intenta de nuevo.  </string>
+    <string name="error_code_453">Error al cancelar el viaje</string>
+    <string name="error_code_456">Ya te has registrado con este número de teléfono.</string>
+    <string name="error_code_457">El Id del conductor no es válido.</string>
+    <string name="error_code_801">Correo electrónico no está registrado.</string>
+    <string name="error_code_802">La actualización del Token de dispositivo falló.</string>
+    <string name="error_code_803">Viaje programado no ha sido encontrado.</string>
+    <!-- error code add 25-Mar_2017-->
+    <string name="error_code_479">Los detalles del conductor no han sido encontrados. </string>
+    <string name="error_code_480">Los documentos del conductor no han sido encontrados. </string>
+    <string name="error_code_486">La respuesta del conductor al viaje ha fallado. </string>
+    <string name="error_code_489">La carga del estatus del conductor ha fallado. </string>
+    <string name="error_code_488">La carga del perfil de conductor ha fallado.</string>
+    <string name="error_code_492">La carga del rating del conductor ha fallado.</string>
+    <string name="error_code_490">La carga de la ubicación del proveedor ha fallado.</string>
+    <string name="error_code_485">El pago ha fallado.</string>
+    <string name="error_code_451">Token inválido.</string>
+    <string name="error_code_811">El idioma no ha sido encontrado.</string>
+    <string name="error_code_701">La carga de dinero al wallet ha fallado.</string>
+    <string name="error_code_702">El cambio de estatus del wallet ha fallado.</string>
+    <string name="error_code_449">Viaje ya ha sido aceptado</string>
+    <string name="error_code_992">Falta un parámetro</string>
+    <string name="error_code_993">Parámetros inválidos</string>
+
+    <!--push_message-->
+    <string name="PUSH_MESSAGE_207">Ha sido aprobado por admin para esta aplicación </string>
+    <string name="PUSH_MESSAGE_208">Ha sido rechazado por admin para esta aplicación </string>
+    <string name="PUSH_MESSAGE_201">Ha recibido una nueva solicitud de viaje. </string>
+    <string name="PUSH_MESSAGE_205">Tu viaje actual ha sido cancelado :(</string>
+    <string name="PUSH_MESSAGE_210">La dirección de destino ha sido actualizada por el pasajero.</string>
+    <string name="PUSH_MESSAGE_211">El método de pago ha sido cambiado a efectivo. </string>
+    <string name="PUSH_MESSAGE_212">El método de pago ha sido cambiado a tarjeta. </string>
+    <string name="PUSH_MESSAGE_213">El método de pago ha sido cambiado a tarjeta. </string>
+    <string name="PUSH_MESSAGE_230">Te has logueado en otro dispositivo.</string>
+    <string name="PUSH_MESSAGE_242">Ahora está fuera de línea para recibir nuevas solicitudes de viaje por favor.</string>
+    <string name="PUSH_MESSAGE_241">Tu viaje ha finalizado.</string>
+    <string name="PUSH_MESSAGE_232">El viaje ha sido aceptado por otro conductor.</string>
+
+
+    <!--Http error code-->
+    <string name="http_error_404">El Url no se ha conseguido\nPor favor chequea tu conexión a internet</string>
+    <string name="http_error_502">Problemas de gateway</string>
+    <string name="http_error_504">Gateway timeout</string>
+    <string name="http_error_503">Service unavailable</string>
+    <string name="http_error_500">Internal server error</string>
+    <string name="http_error_408">Request timeout</string>
+    <string name="http_error_413">Request entity too large </string>
+
+
+    <!--Unit text-->
+
+
+    <!--Text add 01-Dec-2016-->
+
+    <string name="text_bank_name">Nombre del banco</string>
+    <string name="text_bank_branch">Agencia</string>
+    <string name="text_account_no">Número de cuenta</string>
+    <string name="text_ac_holder_name">Titular de la cuenta</string>
+    <string name="text_bank_unique_code">Código único</string>
+    <string name="text_bank_swift_code">Swift code </string>
+    <string name="text_bank_beneficiary_address">Dirección del beneficiario</string>
+    <string name="text_bank_detail">Detalles del banco</string>
+    <string name="text_help_line">Soporte</string>
+    <string name="text_trip_number">Número Viaje.</string>
+    <string name="msg_plz_enter_remain_detail">Ingresa los detalles faltantes. </string>
+    <string name="text_your_earning">Ganancias</string>
+    <string name="text_push_notification">Notificaciones</string>
+    <string name="text_push_notification_description">Reproducir sonido cuando se ha recibido una notificación push.</string>
+    <string name="text_wait_time_start_after">Tiempo de espera antes de iniciar</string>
+    <string name="text_wait_time">Tiempo total de espera</string>
+    <string name="text_remain">Restante</string>
+    <string name="text_wallet">Cartera</string>
+    <string name="msg_enable_notification_permission">Según la marca de dispositivo o los valores de seguridad del fabricante, recomendamos que se acepten permisos para las notificaciones push, de lo contrario la aplicación no podrá recibir notificaciones push. \n Permissions > Autostart </string>
+    <string name="text_done">Listo</string>
+    <string name="text_search_city_name">Seleccionar ciudad</string>
+
+
+    <!--Text add 18-Mar-2017-->
+
+    <string name="msg_plz_enter_document_unique_code">Por favor ingresa tu número único de documento.</string>
+    <string name="msg_plz_enter_document_expire_date">Ingresa una fecha válida de vencimiento.         .</string>
+    <string name="text_select_document_expire_date">Seleccione fecha de vencimiento</string>
+    <string name="text_id_number">Número de identificación:</string>
+    <string name="text_expire_date">Fecha Venc :</string>
+    <string name="text_select">Select</string>
+    <string name="text_mandatory_document">* Documento requerido</string>
+    <string name="text_tip">Consejo</string>
+    <string name="text_update_app">Favor actualiza el app.</string>
+    <string name="text_update">Actualizar</string>
+    <string name="meg_update_app">Estas usando una versión viaje del app. Por favor actualiza a la nueva. </string>
+    <string name="text_enter_document_id"> Ingresa número identificación</string>
+    <string name="text_not_now">No ahora</string>
+    <string name="meg_language_not_an_english">Su idioma de dispositivo no es inglés, como resultado de que la aplicación no funcionará correctamente, por favor cambie el idioma del dispositivo a inglés.</string>
+    <string name="text_attention">Atención!</string>
+    <string name="msg_reason_for_permission_sms">Sin estos permisos del APP no podrá recibir mensajes SMS. ¿Estás seguro deseas negar este permiso?
+    </string>
+    <string name="msg_plz_select_document_image">Favor selecciona una imagen del documento. </string>
+
+
+    <!--Text add 06-Apr-2017-->
+    <string name="text_toll_dialog_title">Peajes totales</string>
+    <string name="text_enter_toll_amount">Monto de peajes</string>
+    <string name="text_apply">Aplicar</string>
+    <string name="text_plz_enter_amount">Agregar un monto válido</string>
+    <string name="text_toll">Monto total</string>
+
+
+    <!--Text add 07-Apr-2017-->
+    <string name="text_user_miscellaneous_fee">Fee miscelaneos pasajero</string>
+    <string name="text_user_city_tax">Impuestos usuarios</string>
+    <string name="text_provider_miscellaneous_fee">Fee miscelaneos conductor</string>
+    <string name="text_provider_city_tax">Impuestos conductor</string>
+
+
+    <!--Text add 27-Apr-2017-->
+    <string name="text_heat_map">Mapa de calor</string>
+    <string name="text_heat_map_setting_description">Mostrar áreas donde se han creado más viajes en las últimas horas.</string>
+
+    <!-- Text add 08-May-2018-->
+    <string name="text_fixed_rate">Tarifa fija</string>
+    <string name="text_airport_trip">Viaje al aeropuerto</string>
+    <string name="text_city_trip">Viaje de ciudades</string>
+    <string name="text_zone_trip">Viajes de zonas</string>
+    <string name="start_min_fare">* Tarifa mínima</string>
+    <string name="text_applied">Aplicado</string>
+
+
+    <!-- Text add 01-June-2017 -->
+    <string name="error_code_1001">No operamos en este país.</string>
+    <string name="error_code_1002">No operamos en esta ciudad.</string>
+
+
+    <!-- Text add 06-June-2017 -->
+    <string name="text_rate_user">Calificar usuario</string>
+    <string name="text_succesfully_rated">Usuario calificado con éxito.</string>
+
+
+    <!-- Text add 12-June-2017-->
+    <string name="text_schedule_pickup_time">Programar hora recogida:</string>
+
+
+    <!--Text add 27-July-2017-->
+    <string name="text_terms_and_condition">Acepto los términos y condiciones. </string>
+    <string name="title_terms_condition">Términos &amp; y condiciones</string>
+
+
+    <!--Text add 18-Aug-2017-->
+    <string name="text_earning">Ganancias</string>
+    <string name="text_day">Diarias</string>
+    <string name="text_week">Semanales</string>
+
+
+    <!--Text add 21-Aug-2017-->
+    <string name="text_total_earnings">Ganancias totales</string>
+    <string name="text_provider_fees">Fees del conductor</string>
+    <string name="text_cash_collected">Efectivo recolectado</string>
+    <string name="text_pay_to_provider">Pagado a conductor</string>
+    <string name="text_admin_paid">Pagos del admin</string>
+    <string name="text_daily_earning">Ganancias diarias</string>
+    <string name="text_trip_earning">Ganancias del viaje</string>
+    <string name="text_time">Tiempo</string>
+    <string name="text_distance">Distancia</string>
+    <string name="text_waiting_time">Tiempo de espera</string>
+    <string name="text_total_services">Total viajes</string>
+    <string name="text_surge_fees">Tarifas aumentadas</string>
+    <string name="text_tax_fees">Impuestos</string>
+    <string name="text_total_payout">Pagos totales</string>
+    <string name="text_select_week">Seleccionar semana</string>
+    <string name="text_ok">OK</string>
+
+
+    <!--Text add 22-Aug-2017-->
+    <string name="text_promo">Promoción</string>
+    <string name="message_can_not_signin_facebook">No ha sido posible ingresar con Facebook.</string>
+    <string name="message_can_not_signin_google">No ha sido posible ingresar con google.</string>
+    <string name="message_can_not_register_facebook">No ha sido posible el registro con Facebook.</string>
+    <string name="message_can_not_register_google">No ha sido posible el registro con Google.</string>
+
+
+    <!--Text add 04-Sep-2017-->
+    <string name="text_trip_cancelled">Viaje cancelado</string>
+    <string name="message_trip_cancel">El viaje ha sido cancelado por el pasajero :(</string>
+
+    <!--Text add 05-Sep-2017-->
+    <string name="error_code_808">Ya te has registrado con una cuenta de Red social (Facebook o google)</string>
+
+
+    <!--Text add 08-Sep-2017-->
+    <string name="text_fare_estimate">Estimado de tarifa</string>
+    <string name="text_ride_now">Iniciar viaje</string>
+    <string name="message_enter_country_phonecode">Favor ingresa el código del país</string>
+
+
+    <!--Text add 12-sep-2017-->
+    <string name="text_change">Cambiar</string>
+
+
+    <!--Text add 15-sep-2017-->
+    <string name="text_hint_vehicle_name">Nombre del vehículo</string>
+    <string name="text_hint_model">Modelo</string>
+    <string name="text_hint_plate_no">Número de placa</string>
+    <string name="text_hint_color">Color</string>
+    <string name="text_year">Año</string>
+    <string name="text_upload_documents">Cargar documentos</string>
+    <string name="text_add_new_vehicle">Agregar nuevo vehículo</string>
+    <string name="text_manage_vehicles">Detalles del vehículo</string>
+    <string name="text_message_provide_vehicle_name">Favor ingresa un número para el vehículo</string>
+    <string name="text_message_provide_vehicle_model">Favor ingresa modelo del vehículo</string>
+    <string name="text_message_provide_vehicle_plate_no">Favor ingresa datos de la placa del vehículo</string>
+    <string name="text_message_provide_vehicle_color">Favor ingresa color del vehículo</string>
+    <string name="message_detail_vehicle_successfully_added">Datos del vehículo ingresados con éxito</string>
+    <string name="message_vehicle_not_approved">Este vehículo no ha sido aprobado por el administrador</string>
+    <string name="message_add_vehicle">Por favor agrega al menos un vehículo.</string>
+    <string name="text_add_vehicle">Agregar vehículo</string>
+    <string name="text_edit_vehicle">Editar vehículo</string>
+
+    <!--Text add 29-sep-2017-->
+    <string name="text_no_documents_are_added_for_your_county">No se han agregado documentos para este país</string>
+
+    <string name="text_end_trip">Toca dos veces para finalizar el viaje</string>
+    <string name="text_trip_is_ending">Viaje esta finalizando…</string>
+    <string name="text_tab_again_end_trip">Toque otra vez para finalizar el viaje</string>
+
+
+    <!--Text add 28-Nov-2017-->
+    <string name="text_change_language">Cambiar idioma</string>
+    <string name="text_language">Idioma</string>
+    <string name="text_thank_you_for_choosing">Gracias por elegir %s</string>
+    <string name="text_register_with">Registrarse con</string>
+    <string name="text_or"> ---- O ---- </string>
+    <string name="text_login_with">Ingresar con</string>
+    <string name="text_date">Fecha</string>
+    <string name="error_code_437">Viaje no conseguido</string>
+    <string name="error_code_91">Problemas agregando documentos.</string>
+    <string name="error_code_92">Los datos bancarios no han sido verificados</string>
+    <string name="error_code_93">Datos bancarios han sido agregados con éxito.</string>
+    <string name="error_code_94">Datos bancarios han sido agregados con éxito.</string>
+    <string name="error_code_95">Se ha generado un problema borrando datos bancarios. Favor reintente.</string>
+    <string name="error_code_96">Detalles bancarios borrados con éxito.</string>
+    <string name="error_code_98">Tus detalles bancarios no son válidos.</string>
+    <string name="error_code_402">Se requiere un identificador único.</string>
+    <string name="error_code_434">Favor ingrese una contraseña válida.</string>
+    <string name="error_code_458">No se ha encontrado un listado de ciudades</string>
+    <string name="error_code_482">Documentación no encontrada</string>
+    <string name="error_code_408">Tu viaje ha sido cancelado.</string>
+
+    <!--06 Mar 2018-->
+    <string name="text_select_payment_gateway">Seleccionar método de pago</string>
+
+    <string name="text_add">Agregar</string>
+    <string name="text_enter_wallet_amount">Monto del wallet</string>
+    <string name="text_submit_small">Enviar</string>
+    <string name="text_selected_card">Selecionar tarjeta</string>
+    <string name="text_other_card">Otras tarjetas</string>
+    <string name="text_add_new_card">Agregar nueva tarjeta</string>
+    <string name="text_continue_or_next">Continuar</string>
+    <string name="msg_enter_card_number">Favor ingresa el número de tarjeta de crédito.</string>
+    <string name="msg_enter_month">Favor ingresa un mes.</string>
+    <string name="msg_enter_valid_month">Favor ingresa un mes y año válido.</string>
+    <string name="msg_enter_year">Favor ingresa un año.</string>
+    <string name="msg_enter_cvv">Favor ingresa el código cvv.</string>
+    <string name="msg_waiting_for_add_card">Agregando tarjeta, por favor espera…</string>
+    <string name="msg_number_invalid">Por favor ingresa un código de tarjeta válido.</string>
+    <string name="msg_date_invalid">Favor ingresa una fecha de vencimiento válida.</string>
+    <string name="msg_cvc_invalid">Por favor ingresa un código cvv válido.</string>
+    <string name="msg_card_invalid">Favor ingresa detalles de tarjeta válidos.</string>
+    <string name="msg_waiting_for_getting_credit_cards">Por favor espera mientras mostramos tus tarjetas…</string>
+    <string name="msg_waiting_for_delete_card">Borrando tarjeta, por favor espera...</string>
+    <string name="msg_you_not_delete_card">No puedes borrar una tarjeta mientras tengas un viaje activo.</string>
+    <string name="text_delete_card">Tarjeta borrada</string>
+    <string name="text_payment_pending">Pendiente</string>
+    <string name="error_code_464">Tu último pago está pendiente, favor contáctanos.</string>
+    <string name="msg_plz_enter_valid">Favor ingresa un monto válido.</string>
+    <string name="msg_plz_add_credit_card">Favor ingresa una tarjeta de crédito</string>
+    <string name="text_payments">Wallet</string>
+    <string name="text_credit_card_number">Número de tarjeta de crédito</string>
+    <string name="text_mm">mm</string>
+    <string name="text_yy">aa</string>
+    <string name="text_cvc">cvv</string>
+    <string name="error_code_442">Tarjeta no encontrada.</string>
+    <string name="error_code_441">Tarjeta no encontrada.</string>
+    <string name="text_fixed_price">Viaje con precio fijo</string>
+    <string name="text_current_rate">Tarifa actual</string>
+    <string name="text_deducted_amount">Monto deducido</string>
+    <string name="text_total_wallet_amount">Monto total del wallet</string>
+    <string name="text_id">ID</string>
+    <string name="text_wallet_status_added_by_admin">Agregado por el admin</string>
+    <string name="text_wallet_status_added_by_card">Cobrado por tarjeta</string>
+    <string name="text_wallet_status_added_by_referral">Agregado por referidos</string>
+    <string name="text_wallet_status_order_charged">Viajes cobrado</string>
+    <string name="text_wallet_status_order_refund">Viajes reversado</string>
+    <string name="text_wallet_status_order_profit">Ganancias totales</string>
+    <string name="text_wallet_status_order_cancellation_charge">Viajes cancelados</string>
+    <string name="text_wallet_status_wallet_request_charge">Cargos requeridos al wallet</string>
+    <string name="text_added_amount">Monto agregado</string>
+    <string name="text_wallet_history">Historial del wallet</string>
+    <string name="text_earn">Ganancia</string>
+    <string name="error_code_809">Historial del wallet no encontrado</string>
+    <string name="msg_min_wallet_required">* Para recibir un viaje en efectivo, el monto del wallet debe ser </string>
+    <string name="text_trip_no">Número viaje.</string>
+    <string name="text_payment">Wallet</string>
+    <string name="text_profit">Ganancia</string>
+    <string name="text_total_order">Solicitudes totales</string>
+    <string name="text_completed_order">Completados</string>
+    <string name="text_complete_ratio">Porcentaje completados</string>
+    <string name="text_accepted_order">Aceptados</string>
+    <string name="text_accepted_ratio">Porcentaje aceptados</string>
+    <string name="text_rejected_order">Rechazados</string>
+    <string name="text_rejected_ratio">Porcentaje rechazados</string>
+    <string name="text_canceled_order">Cancelados</string>
+    <string name="text_canceled_ratio">Porcentaje cancelados</string>
+    <string name="text_miscellaneous_fees">Miscellaneous fees</string>
+    <string name="text_provider_transactions">Balance del conductor</string>
+    <string name="text_provider_have_cash">Efectivo recolectado</string>
+    <string name="text_deduct_wallet_amount">Deducciones en wallet</string>
+    <string name="text_added_wallet_amount">Recibido en wallet</string>
+    <string name="text_statistics">Estadísticas</string>
+    <string name="text_service_price">Precio de servicios</string>
+    <string name="text_total_earning">Ganancias totales</string>
+    <string name="text_paid_in_wallet">En wallet</string>
+    <string name="text_time_online">Tiempo online</string>
+    <string name="text_received_request">Solicitudes recibidas</string>
+    <string name="error_code_805">Ganancias no encontradas.</string>
+    <string name="text_tip_amount">Monto de propinas</string>
+    <string name="text_gender">Genero</string>
+    <string name="text_male">Masculino</string>
+    <string name="text_handicap">Minusválido</string>
+    <string name="text_baby_seat">Silla de bebé</string>
+    <string name="text_female">Femenino</string>
+    <string name="text_accept_request_type">¿Que requerimiento de pasajeros deseas?</string>
+    <string name="text_seating_available">Proveyendo accesibilidad</string>
+    <string name="text_hotspot">Hotspot</string>
+    <string name="text_select_languages_you_are_speak">Selecciona un idioma</string>
+    <string name="text_save">Guardar</string>
+    <string name="msg_plz_select_at_one_user_type">Selecciona al menos un tipo de usuario.</string>
+    <string name="msg_plz_select_at_one_language">Seleccione al menos un idioma</string>
+    <string name="text_select_gander">Selecciona género</string>
+    <string name="msg_plz_select_valid_source_address">No es posible obtener la dirección, por favor intente de nuevo.</string>
+    <string name="msg_for_end_trip_location_update">Luego de la actualizar la ubicación, su viaje podrá terminar. </string>
+    <string name="message_edit_vehicle">Por favor agregar los detalles faltantes de los vehículos seleccionados.</string>
+    <string name="message_document_expire">Tus documentos han vendido. Favor cargar uno nuevo.</string>
+    <string name="message_vehicle_document_expire">Los documentos de tu vehículo han vencido. Favor cargar nuevos.</string>
+    <string name="text_document_expire">Los documentos han vencido.</string>
+    <string name="text_rout_no">Routing number</string>
+    <string name="text_personal_id_number">Número de documento</string>
+    <string name="text_dob">D.O.B</string>
+    <string name="text_account_holder_type">Tipo de beneficiario de cuenta</string>
+    <string name="text_retry">Reintentar</string>
+    <string name="msg_plz_account_name">Agregue beneficiario</string>
+    <string name="msg_plz_valid_account_number">Favor agregar número de cuenta válido</string>
+    <string name="msg_plz_valid_routing_number">Favor agregar routing number válido</string>
+    <string name="msg_plz_valid_personal_id_number">Favor agregar número válido de documento</string>
+    <string name="text_individual">Individual</string>
+    <string name="msg_add_dob">Favor agregar fecha de nacimiento</string>
+    <string name="msg_add_document_image">Favor agregar imagen de documento</string>
+    <string name="text_request_to_admin">Solicitar a administrador</string>
+    <string name="text_hello_sir">Hola</string>
+    <string name="text_pickup_address">Dirección de inicio</string>
+    <string name="text_call">Llamar</string>
+
+    <string name="msg_cards_accepted">Sólo visa y mastercard son aceptadas</string>
+    <string name="text_card_holder_name">Nombre del tarjetahabiente</string>
+    <string name="text_mm_aa">mm/aa</string>
+    <string name="text_cards">Tarjetas</string>
+    <string name="msg_please_enter_valid_name">Favor ingrese un nombre válido</string>
+    <string name="text_credit_card">Tarjeta de crédito</string>
+    <string name="text_use_wallet">Usar wallet</string>
+    <string name="text_wallet_amount">Monto del Wallet</string>
+    <string name="text_delete_a_card">Borrar tarjeta</string>
+    <string name="text_menu">Menú</string>
+    <string name="text_phone_not_available">Número de teléfono no disponible</string>
+    <string name="text_location_not_found">Ubicación no encontrada</string>
+    <string name="text_your_vehicle">Tu vehículo</string>
+    <string name="text_close">Cerrar</string>
+    <string name="text_call_message">Favor esperar hasta que la llamada sea asignada.</string>
+    <string name="msg_please_signin_with_google_to_enable_a_chat">Favor ingresa con google\nPara
+        Activar chat</string>
+    <string name="text_chat_to_user">Chatea con </string>
+    <string name="text_SingIn">Ingresar</string>
+    <string name="text_read">Leer</string>
+    <string name="text_chat">Chatear</string>
+    <string name="msg_firebase_auth_failed">Firebase authentication failed</string>
+    <string name="text_rent_trip">Alquiler vehículo</string>
+    <string name="text_no_email_app">No email app</string>
+    <string name="text_no_type">Your type is not available</string>
+    <string name="message_vehicle_document_uploded">Los documentos de tu vehículo no fueron cargados, favor cargalos.</string>
+    <string name="text_document_not_uploded">Documentos no cargados.</string>
+    <string name="error_code_448">No estás registrado con este mecanismo.</string>
+    <string name="msg_no_trip_item">No se muestra ningún viaje.</string>
+    <string name="msg_no_history_item">No se muestra ningún historial</string>
+    <string name="text_trems_and_condition_main">Al continuar, confirmo que he leido y acepto los &lt;a href=\ %1$s\>Términos y &amp; Condiciones &lt;/a> y &lt;a href=\ %2$s\>Políticas de privacidad &lt;/a> </string>
+    <string name="text_enter_your_message">Ingresa tu mensaje</string>
+    <string name="msg_please_enter_valid_mobile_number_between">Ingresa número de teléfono %1$d - %2$d</string>
+    <string name="msg_please_enter_valid_mobile_number">Ingresa número de teléfono de %1$d dígitos</string>
+    <string name="text_package">Paquete</string>
+    <string name="msg_for_extra_charge">Cargos de distancia extra %1$s.\nCargos tiempo extra %2$s</string>
+    <string name="text_card_expire_date">Seleccione fecha de vencimiento</string>
+    <string name="msg_referral">Agrega un código de referidos para obtener un crédito en tu cuenta. Si no lo tiene, simplemente toca el botón de continuar.     </string>
+    <string name="error_referral_invalid">Favor agrega un código de referido válido. </string>
+    <string name="text_referral">Referidos</string>
+    <string name="text_enter_ref_code">Código referido</string>
+    <string name="text_skip">Continuar</string>
+    <string name="text_your_referral_code">Tu código de referido</string>
+    <string name="text_your_referral_credit">Sus créditos de derivación</string>
+    <string name="text_share_referral_code">Compartir código de referencia</string>
+    <string name="text_referral_share_with_"> Código de referidos compartido con</string>
+    <string name="msg_my_referral_code_is">Mi código de referidos es</string>
+    <string name="text_state_code">Código del estado</string>
+    <string name="text_postal_code">Código postal</string>
+
+    <string name="msg_stripe_not_added">Plataforma de pago no fue agregada</string>
+    <string name="msg_enert_valid_data">Favor agregar data válida</string>
+    <string name="msg_valid_address">Favor agrega una dirección válida</string>
+    <string name="msg_valid_state_code">Favor ingresa un código de estado válido</string>
+    <string name="msg_valid_postal_code">Favor ingresa un código postal válido</string>
+    <string name="msg_enter_valid_destination">Favor ingresa una dirección de destino válida.</string>
+    <string name="error_referral">Por favor ingresa un código de referido válido</string>
+    <string name="error_code_899">El usuario no ha sido aprobado por el admin.</string>
+    <string name="error_payment_cancel">El proceso de pago ha sido cancelado</string>
+    <string name="error_payment_processing">Pago procesándose</string>
+    <string name="error_payment_auth">Autenticación del pago ha fallado</string>
+    <string name="text_upload_photo_id_front">Subir foto del documento de identidad frontal</string>
+    <string name="text_upload_photo_id_back">Subir foto del documento de identidad trasero</string>
+    <string name="text_upload_photo_additional">Subir documentos adicionales</string>
+    <string name="text_view">Ver</string>
+    <string name="text_upload">Subir</string>
+    <string name="msg_error_stripe">Please set stripe payment key on admin penal</string>
+    <string name="text_background_restriction">Background App Restriction</string>
+    <string name="msg_background_restriction">Su dispositivo tiene una restricción de aplicación en segundo plano debido al permiso, el servicio de ubicación de la aplicación puede funcionar mal y el cálculo de la distancia no es preciso, así que habilite el servicio en segundo plano.</string>
+    <string name="msg_background_restriction_universal">Su dispositivo tiene una restricción de aplicación en segundo plano debido al permiso, el servicio de ubicación de la aplicación puede funcionar mal y el cálculo de la distancia no es preciso, así que habilite el servicio en segundo plano.
+  Puede ir a Configuración -> Aplicaciones -> Seleccione nuestra aplicación -> Habilitar el permiso Ejecutar en segundo plano.</string>
+    <string name="msg_location_prominent_disclosure">%1$s collects location data to enable below
+        feature even when the app is closed or not in use.
+    </string>
+    <string name="text_use_your_location">Usar tu ubicación</string>
+    <string name="text_location_user_for_feature_1">Actualizar la ubicación frecuentemente para recibir nuevas solicitudes de viajes. </string>
+    <string name="text_location_user_for_feature_2">Los pasajeros podrán seguir tu ubicación mientras están en el viaje.</string>
+    <string name="text_location_user_for_feature_3">Obtener el destino donde el cliente desea acabar su viaje.</string>
+
+    <string name="text_update_location_settings">Actualizar tus permisos de localización.</string>
+    <string name="text_no_thanks">No gracias</string>
+    <string name="text_update_settings">Actualizar permisos</string>
+    <string name="msg_update_location_settings">Permitenos acceder a tu localización todo el tiempo para que podamos proveer un servicio de localización adecuado a los pasajeros para lograr la mejor experiencia.
+</string>
+    <string name="error_code_995">El viaje ya está en marcha.</string>
+    <string name="text_trip_id">Id de voyage.</string>
+    <string name="msg_hint_otp_send_number">Entrez le code à 6 chiffres qui vous a été envoyé à <b>%1s %2s</b>.</string>
+    <string name="msg_resend_otp_time">Renvoyer le code dans %1$02d :%2$02d</string>
+    <string name="msg_resend_code">Renvoyer le code</string>
+    <string name="text_edit">Modifier</string>
+    <string name="please_enter_pin">Veuillez saisir le code PIN</string>
+    <string name="eg_1234">Ex.1234</string>
+    <string name="enter_pin">Entrez le code</string>
+    <string name="please_enter_otp">Veuillez entrer OTP</string>
+    <string name="enter_otp">Entrez OTP</string>
+    <string name="eg_123456">Ex.123456</string>
+    <string name="please_enter_phone_no">Veuillez entrer le numéro de téléphone</string>
+    <string name="enter_phone_number">Entrez le numéro de téléphone</string>
+    <string name="minimum_10_digits">Minimum 10 chiffres (par exemple 1234567890)</string>
+    <string name="please_enter_birthdate">Veuillez entrer la date de naissance</string>
+    <string name="enter_birthdate">Entrez la date de naissance</string>
+    <string name="eg_dd_mm_yyyy">Par exemple.dd-mm-yyyy</string>
+    <string name="please_enter_address">Veuillez saisir l\'adresse</string>
+    <string name="enter_address">Entrez l\'adresse</string>
+    <string name="msg_plz_enter_valid_field">Veuillez saisir un champ valide.</string>
+    <string name="message_code_91">Montant du portefeuille ajouté avec succès</string>
+    <string name="msg_plz_valid_bank_code">Veuillez ajouter un code bancaire valide</string>
+    <string name="hint_bank_code">Code bancaire</string>
+    <string name="text_edit_my_mobile_number">Modifier mes détails</string>
+    <string name="text_you_canceled_by_user">Annulé par l\'utilisateur</string>
+    <string name="text_you_canceled_by_provider">Annulé par le pilote</string>
+    <string name="text_you_canceled_by_admin">Annulé par l\'administrateur</string>
+    <string name="PUSH_MESSAGE_218">Su viaje cancelado por el administrador.</string>
+    <string name="error_code_1100">Llame al servicio no disponible en este momento.</string>
+    <string name="msg_enter_valid_email_min_max_length">Introduzca una dirección de correo electrónico de entre 12 y 64 caracteres</string>
+    <string name="msg_enter_country">País no agregado</string>
+    <string name="text_share_referral">Comparte tu código de referencia con tus amigos y obtén créditos de referencia adicionales.</string>
+    <string name="PUSH_MESSAGE_233">El pago falló y los clientes tendrán la opción de cambiar el viaje a efectivo.</string>
+    <string name="PUSH_MESSAGE_234">El pago falló y el pago de los clientes se liquidará desde la billetera.</string>
+</resources>

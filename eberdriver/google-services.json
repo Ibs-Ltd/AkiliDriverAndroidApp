@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "161656691274",
+    "firebase_url": "https://akiliapp-default-rtdb.firebaseio.com",
+    "project_id": "akiliapp",
+    "storage_bucket": "akiliapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161656691274:android:6520721553b2ca3f5a24b3",
+        "android_client_info": {
+          "package_name": "com.akiliapp.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161656691274-tbbl3ui55eq3kjoe6q5f3scf1co6m4pn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akiliapp.driver",
+            "certificate_hash": "f12c5fa3a251f61868c7ab6fd4d87b381e0c49e6"
+          }
+        },
+        {
+          "client_id": "161656691274-4v60ckij68hk2ke23a85pfuqskc9o4ha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ4umzodYzsfKu5pGEOurjnKgLpSFaLjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161656691274-4v60ckij68hk2ke23a85pfuqskc9o4ha.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "161656691274-d1940637h0k2gr16n095j89ec7ca1jjc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.akiliapp.user"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161656691274:android:1d56d9523f07ade95a24b3",
+        "android_client_info": {
+          "package_name": "com.akiliapp.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161656691274-gc829efdlb5036qq7jei6l51smord5uh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akiliapp.user",
+            "certificate_hash": "f12c5fa3a251f61868c7ab6fd4d87b381e0c49e6"
+          }
+        },
+        {
+          "client_id": "161656691274-4v60ckij68hk2ke23a85pfuqskc9o4ha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ4umzodYzsfKu5pGEOurjnKgLpSFaLjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161656691274-4v60ckij68hk2ke23a85pfuqskc9o4ha.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "161656691274-d1940637h0k2gr16n095j89ec7ca1jjc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.akiliapp.user"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

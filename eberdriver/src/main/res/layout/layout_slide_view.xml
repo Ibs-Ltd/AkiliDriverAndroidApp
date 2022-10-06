@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.elluminati.eber.driver.components.Slider
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/slider_background"
+        android:clickable="false"
+        android:max="100"
+        android:maxHeight="@dimen/swipe_button_height"
+        android:minHeight="@dimen/swipe_button_height"
+        android:progressDrawable="@drawable/slider_progress"
+        android:scaleX="1.1"
+        android:splitTrack="false"
+        android:thumb="@drawable/slide_view_thumb"
+        android:thumbOffset="-2dp" />
+
+    <ImageView
+        android:id="@+id/ivArrowImage"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/arrow_slide_end" />
+
+
+    <com.elluminati.eber.driver.components.MyFontTextView
+        android:id="@+id/slideText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_end_trip"
+        android:textStyle="bold"
+        tools:text="End Trip" />
+
+
+</RelativeLayout>

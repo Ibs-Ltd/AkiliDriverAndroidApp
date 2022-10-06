@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_padding"
+    android:layout_marginTop="@dimen/activity_horizontal_padding"
+    android:layout_marginEnd="@dimen/activity_horizontal_padding"
+    android:background="@color/color_app_wallet_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/llProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/ivWalletStatus"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/activity_horizontal_padding"
+            android:background="@color/color_app_text"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_padding"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+                android:id="@+id/tvTransactionState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="--"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_general_small" />
+
+            <com.elluminati.eber.driver.components.MyFontTextView
+                android:id="@+id/tvWithdrawalID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_padding"
+                android:layout_marginBottom="@dimen/activity_horizontal_padding"
+                android:gravity="start"
+                android:text="--"
+                android:textAlignment="viewStart"
+                android:textColor="@color/color_app_text"
+                android:textSize="@dimen/size_label" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.elluminati.eber.driver.components.MyFontTextView
+                    android:id="@+id/tvTransactionDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="start"
+                    android:text="--"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/color_app_text"
+                    android:textSize="@dimen/size_label" />
+
+                <com.elluminati.eber.driver.components.MyFontTextView
+                    android:id="@+id/tvTransactionTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="--"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/color_app_text"
+                    android:textSize="@dimen/size_label" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.elluminati.eber.driver.components.MyAppTitleFontTextView
+            android:id="@+id/tvTransactionAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_padding"
+            android:layout_marginBottom="5dp"
+            android:gravity="end|top"
+            android:text="--"
+            android:textSize="@dimen/size_label" />
+    </LinearLayout>
+
+
+</LinearLayout>
